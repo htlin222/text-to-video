@@ -1,1 +1,0 @@
-通過添加查詢文件夾來組織您的個人或共享查詢。然後，您可以將查詢添加到這些文件夾或將現有查詢移動到這些文件夾中。您可以從 Web 門戶或受支持的客戶端（例如 Visual Studio Team Explorer 和 Team Explorer Everywhere（Eclipse 的一個插件））創建查詢和查詢文件夾
