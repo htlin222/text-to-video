@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 # install the packages first
 # pip install googletrans==4.0.0-rc1 pyperclip
-from googletrans import Translator
 import re
 import os
-import pyperclip as pc
-# retrieve the text from the clipboard
-text = pc.paste()
+
 def paragraph_to_outlines(text):
     # move quote inside the period
     sub_result = re.sub('\.("|”)', '".', text)
@@ -27,13 +24,30 @@ def paragraph_to_outlines(text):
     # delete empty line
     sub_result = re.sub('^\n','',sub_result)
     # add '-' in each line and add title
-    result = "# 重點: \n\n" + re.sub(r'(?m)^','- ',sub_result)
+    sub_result = "## 重點: \n\n" + re.sub(r'(?m)^','- ',sub_result)
+    result = re.sub(r'(?m)^-\s$', '',sub_result)
+    print(result)
+    return result
 
-with open('original.txt') as f:
-    lines = f.readlines()
-    # text = lines[0]
-# TODO: add for loop for each line
-i = 1
-for text in lines:
-    print(i)
-    i = i + 1
+def read_file(filename):
+    textfile = open(filename, 'r')
+    filetext = textfile.read()
+    return filetext
+
+def open_file_then_set_outline(input_file, output_file):
+    with open(input_file) as f:
+        lines = f.readlines()
+
+    outline_list = []
+
+    for text in lines:
+        outlines = paragraph_to_outlines(text)
+        outline_list.append(outlines)
+
+    with open(output_file, 'w+') as fp:
+        for item in outline_list:
+            # write each item on a new line
+            fp.write("%s\n" % item)
+
+if __name__=='__main__':
+    open_file_then_set_outline('source.md','outline.md')

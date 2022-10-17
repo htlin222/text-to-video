@@ -1,0 +1,3 @@
+## title
+
+We conducted a multicenter, prospective, randomized, controlled trial of endovascular thrombectomy for basilar-artery occlusion at 36 centers in China. Patients were assigned, in a 2:1 ratio, within 12 hours after the estimated time of basilar-artery occlusion to receive endovascular thrombectomy or best medical care (control). The primary outcome was good functional status, defined as a score of 0 to 3 on the modified Rankin scale (range, 0 [no symptoms] to 6 [death]), at 90 days. Secondary outcomes included a modified Rankin scale score of 0 to 2, distribution across the modified Rankin scale score categories, and quality of life. Safety outcomes included symptomatic intracranial hemorrhage at 24 to 72 hours, 90-day mortality, and procedural complications.
