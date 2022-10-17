@@ -1,4 +1,8 @@
 !output/
 output/*
 
+translated.txt
+outline.md
 .DS_Store
+
+__pycache__/
