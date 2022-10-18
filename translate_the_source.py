@@ -24,5 +24,10 @@ def remove_unwanted_characters(text):
     return text
 
 if __name__=='__main__':
-    translate_to_zh('source.md','translated.txt')
-    print('翻譯完成')
+    my_file = Path(sys.argv[1])
+    if my_file.is_file():
+        translate_to_zh(sys.argv[1], sys.argv[2])
+        print("Translate Done")
+    else:
+        print('please create file:', my_file, 'first, thank you.')
+        file = open(sys.argv[1], 'w')
