@@ -25,5 +25,10 @@ def text_to_speech(input_file,output_folder):
         i = i + 1
 
 if __name__=='__main__':
-    input_file = 'translated.txt'
-    text_to_speech(input_file,'output')
+    my_file = Path(sys.argv[1])
+    if my_file.is_file():
+        text_to_speech(sys.argv[1], sys.argv[2])
+        print("Done")
+    else:
+        print('please create file:', my_file, 'first, thank you.')
+        file = open(sys.argv[1], 'w')
