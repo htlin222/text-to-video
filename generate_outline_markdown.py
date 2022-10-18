@@ -2,7 +2,9 @@
 # install the packages first
 # pip install googletrans==4.0.0-rc1 pyperclip
 import re
+import sys
 import os
+from pathlib import Path
 
 def paragraph_to_outlines(text):
     # move quote inside the period
@@ -53,7 +55,7 @@ if __name__=='__main__':
     my_file = Path(sys.argv[1])
     if my_file.is_file():
         open_file_then_set_outline(sys.argv[1], sys.argv[2])
-        print("Done ~ ")
+        print("✨Have generated the", str(sys.argv[1]), 'to', str(sys.argv[2]))
     else:
         print('please create file:', my_file, 'first, thank you.')
         file = open(sys.argv[1], 'w')

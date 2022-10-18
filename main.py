@@ -29,7 +29,7 @@ if __name__=='__main__':
     my_file = Path(sys.argv[1])
     if my_file.is_file():
         project_init(sys.argv[1], sys.argv[2])
-        print("Have generated pptx and wav files in the [", str(sys.argv[2]), '] folder')
+        print("✨Have generated pptx and wav files in the [", str(sys.argv[2]), '] folder')
     else:
-        print('please create file:', my_file, 'first, thank you.')
+        print('❌ please create file:', my_file, 'first, thank you.')
         file = open(sys.argv[1], 'w')

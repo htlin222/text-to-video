@@ -21,7 +21,7 @@ if __name__ == '__main__':
     create_output_folder(sys.argv[2])
     if my_file.is_file():
         convert_to_pptx(sys.argv[1], sys.argv[2])
-        print("Done ~ ")
+        print("✨Have generated the pptx to", str(sys.argv[2]))
     else:
         print('please create file:', my_file, 'first, thank you.')
         file = open(sys.argv[1], 'w')

@@ -2,23 +2,28 @@
 
 ## Dependencis
 
-- python package
-- pandoc
+- apply the azure text to speech service
+- export to `SPEECH_KEY` and `SPEECH_REGION` to system env
+- install the python package
+```shell
+pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc
+```
 
+## Quick Start
 
-## How to use
+- edit `source.md` in the current directroy, and add the content in it
+- then run the following command:
+```shell
+python main.py source.md output_folder
+```
+- it will create two files: `translated.txt`, and `outline.md` in current directroy
+- then create audio and pptx from them
+- the audio and pptx will be in `output_folder`
 
-### Text to speech 
+## if you want to edit the translated text and export again:
 
-- add content to `original.txt`
-- run `translate-the-original.py`
-- the result will be in `translated.txt`
-- run `text-to-speech.py`
-- the result will be in `output/file.wav`
-
-### Generate the slide
-
-- run `generate-markdown.py`
-- result will be in `md-to-slide.md`
-- run `pandoc`
-- the result will be in `slide-result.pptx`
+- edit the `translated.txt`
+- run:
+```shell
+python text_to_speech.py translated.txt output_folder
+```
