@@ -3,7 +3,12 @@
 ## Dependencis
 
 - apply the azure text to speech service
-- export to `SPEECH_KEY` and `SPEECH_REGION` to system env
+- export the `SPEECH_KEY` and `SPEECH_REGION` to system env
+	```
+	export SPEECH_KEY='YOURSPEECH_KEY'
+	export SPEECH_REGION='southeastasia'
+	```
+- or you can add them in `.zshrc` or `.bashrc`
 - install the python package
 	```shell
 	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc
@@ -20,20 +25,19 @@
 ```shell
 python main.py PROJECT.md
 ```
-- the script will do the following things:
-	- create a folder name 'PROJECT'
-	- it will create two files: `translated.txt`, and `outline.md` in that folder
-	- create audio and pptx from them
+- the script will:
+	- create a folder `PROJECT`
+	- create : `translated.txt`, `outline.md`, `slide.pptx`, and `Audio.mp4` in the folder
 
 ## If you want to edit the translated text and export to audio files again:
 
 - edit the `translated.txt` in your `PROJECT` folder
-- run:
-```shell
-python text_to_speech.py PROJECT/translated.txt PROJECT
-```
+- after edit, in parent folder, run:
+	```shell
+	python text_to_speech.py PROJECT/translated.txt PROJECT
+	```
 
-## Then open the `slide.pptx`, edit it, and export to images by:
+## Open the `slide.pptx` by powerpoint, edit it, and export to images by:
 
 - select the export type as png
 - name the file as `slide`

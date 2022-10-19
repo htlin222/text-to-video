@@ -1,4 +1,2 @@
-import subprocess
-
-message = 'Hellow'
-subprocess.run(f"echo {message}", shell=True)
+import aspose.slides as slides
+import aspose.pydrawing as drawing
