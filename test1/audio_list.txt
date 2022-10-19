@@ -1,0 +1,2 @@
+file test1/1_一名有哮喘病史的 .wav
+file test1/2_她最近接受了第三劑.wav

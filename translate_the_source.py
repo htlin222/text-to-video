@@ -1,6 +1,8 @@
 from googletrans import Translator
 import os
 import re
+import sys
+from pathlib import Path
 
 def translate_to_zh(input_file, output_file):
     with open(input_file) as f:
@@ -20,6 +22,7 @@ def translate_to_zh(input_file, output_file):
 def remove_unwanted_characters(text):
     text = re.sub('>', '大於', text)
     text = re.sub('<', '小於', text)
+    text = re.sub('\s', '', text)
     text = re.sub('(\[|\])', '，', text)
     return text
 
