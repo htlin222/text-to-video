@@ -25,8 +25,7 @@ def text_to_speech(input_file,output_folder):
         stream = AudioDataStream(result)
         filename = output_folder + "/" + str(i) + '_' + text[0:9] + '.wav'
         stream.save_to_wav_file(filename)
-        file_filename = "file " + filename
-        audio_list.append(file_filename)
+        audio_list.append(filename)
         i = i + 1
     audio_list_file = output_folder + '/' + "audio_list.txt"
     with open(audio_list_file, 'w+') as fp:
