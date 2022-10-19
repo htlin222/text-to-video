@@ -16,13 +16,19 @@ def text_to_speech(input_file,output_folder):
     with open(input_file) as f:
         lines = f.readlines()
     i = 1
+    audio_list = []
     for text in lines:
         ssml = SSML_START + SSML_SETTINGS + text + SSML_END
         result = synthesizer.speak_ssml_async(ssml).get()
         stream = AudioDataStream(result)
         filename = output_folder + "/" + str(i) + '_' + text[0:9] + '.wav'
         stream.save_to_wav_file(filename)
+        audio_list.append(filename)
         i = i + 1
+    audio_list_file = output_folder + '/' + "audio_list.txt"
+    with open(audio_list_file, 'w+') as fp:
+        for item in audio_list:
+            fp.write("%s\n" % item)
 
 if __name__=='__main__':
     my_file = Path(sys.argv[1])
