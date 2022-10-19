@@ -27,3 +27,23 @@ python main.py source.md output_folder
 ```shell
 python text_to_speech.py translated.txt output_folder
 ```
+
+## TODO:
+
+- export serial image to audio
+```shell
+ffmpeg -i image1.png -i image2.png -i audio1.wav -i audio2.wav
+  -filter_complex
+     "[0]setsar=1[a];
+      [1]pad=W:H:(ow-iw)/2:(oh-ih)/2:color=white,setsar=1[b];
+      [2]abitscope=r=25:s=WxH[a1v]; 
+      [3]abitscope=r=25:s=WxH[a2v];
+      [a1v][a]overlay[v1];
+      [a2v][b]overlay[v2];
+      [v1][2:a][v2][3:a]concat=n=2:v=1:a=1"  out.mp4  
+```
+- or try this
+```shell
+ffmpeg -i slide_1.png -i speech_1.wav clip_1.mp4
+ffmpeg -f concat -safe 0 -i mylist.txt -c copy output.mp4
+```
