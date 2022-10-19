@@ -8,7 +8,7 @@ from azure.cognitiveservices.speech.audio import AudioOutputConfig
 # def text_to_speech(input_file):
 # export SPEECH_KEY and SPEECH_REGION in your zshrc or zprofile
 speech_config = speechsdk.SpeechConfig(subscription=os.environ.get('SPEECH_KEY'), region=os.environ.get('SPEECH_REGION'))
-synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config)
+synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=None)
 
 SSML_SETTINGS = '<voice name="zh-TW-YunJheNeural"><prosody rate="15%" pitch="+5%">'
 SSML_START = '<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">'

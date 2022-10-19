@@ -5,45 +5,46 @@
 - apply the azure text to speech service
 - export to `SPEECH_KEY` and `SPEECH_REGION` to system env
 - install the python package
-```shell
-pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc
-```
+	```shell
+	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc
+	```
+- install the ffmpeg
+	```
+	brew install ffmpeg
+	```
 
 ## Quick Start
 
-- edit `source.md` in the current directroy, and add the content in it
+- create a markdown file in the project directroy, and add the content in it
 - then run the following command:
 ```shell
-python main.py source.md output_folder
+python main.py PROJECT.md
 ```
-- it will create two files: `translated.txt`, and `outline.md` in current directroy
-- then create audio and pptx from them
-- the audio and pptx will be in `output_folder`
+- the script will do the following things:
+	- create a folder name 'PROJECT'
+	- it will create two files: `translated.txt`, and `outline.md` in that folder
+	- create audio and pptx from them
 
-## if you want to edit the translated text and export again:
+## If you want to edit the translated text and export to audio files again:
 
-- edit the `translated.txt`
+- edit the `translated.txt` in your `PROJECT` folder
 - run:
 ```shell
-python text_to_speech.py translated.txt output_folder
+python text_to_speech.py PROJECT/translated.txt PROJECT
 ```
 
-## TODO:
+## Then open the `slide.pptx`, edit it, and export to images by:
 
-- export serial image to audio
-```shell
-ffmpeg -i image1.png -i image2.png -i audio1.wav -i audio2.wav
-  -filter_complex
-     "[0]setsar=1[a];
-      [1]pad=W:H:(ow-iw)/2:(oh-ih)/2:color=white,setsar=1[b];
-      [2]abitscope=r=25:s=WxH[a1v]; 
-      [3]abitscope=r=25:s=WxH[a2v];
-      [a1v][a]overlay[v1];
-      [a2v][b]overlay[v2];
-      [v1][2:a][v2][3:a]concat=n=2:v=1:a=1"  out.mp4  
-```
-- or try this
-```shell
-ffmpeg -i slide_1.png -i speech_1.wav clip_1.mp4
-ffmpeg -f concat -safe 0 -i mylist.txt -c copy output.mp4
-```
+- select the export type as png
+- name the file as `slide`
+- make sure the powerpoint have created the folder named `slide` in the `PROJECT` folder
+- in the `slide` folder, you will see serial png files named `投影片1.png`...
+
+## Finally, you can combine all the image and wav files into a mp4
+
+- in command line, in the parent directroy, `../PROJECT`
+- run:
+	```
+	python export_final.py PROJECT
+	```
+- you will get a file name `PROJECT_final.mp4` in `PROJECT` folder

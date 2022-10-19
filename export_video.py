@@ -8,11 +8,16 @@ import re
 # subprocess.run(ffmpeg -i ep1.png -i ep1.wav ep1.mp4)
 # output_file_path = folder + '/' + 'slide.pptx'
 def img_and_audio(input_image,input_audio,output_video):
-
+    '''
+    combine an image to wav file to mp4
+    '''
     subprocess.run(f"ffmpeg -y -i {input_image} -i {input_audio} -pix_fmt yuv420p {output_video}", shell=True)
 
 
 def batch_img_and_audio(folder):
+    '''
+    load files from audio_list.txt
+    '''
     i = 1
     the_audio_list = folder + "/" + "audio_list.txt"
     with open(the_audio_list) as the_list:
@@ -39,7 +44,7 @@ def batch_img_and_audio(folder):
 #
 def export_final(output_folder):
     working_dir = output_folder
-    final = str(output_folder) + "_combined.mp4"
+    final = str(output_folder) + "_final.mp4"
     subprocess.run(f"ffmpeg -y -f concat -i concat.txt -c copy {final}", cwd=working_dir, shell=True)
 
 def check_folder(output_folder):
