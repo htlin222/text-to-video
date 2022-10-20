@@ -26,16 +26,20 @@
 	```
 	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc
 	```
-* 安裝ffmpeg
+* 安裝[FFmpeg](https://ffmpeg.org/)
+	```
+	brew install ffmpeg
+	```
 
 ## 使用方法：
 
 * 將任何你要產生影片的文字檔`.md`或`.txt`加入這個repo的目錄下，
-	* 這個文字在建立時有幾個要點：
+	* 檔名不可以有空格，請用`_`底線分隔。
+	* 內文在建立時有幾個要點：
 		* 一段話(用enter分開)就會是一段語音檔、一頁投影片
 		* 自己衡量一下字不要太多不然會爆版
-		* 不能有空行，儘量不要有特殊符號
-* 然後執行:
+		* 不能有空行，不要有特殊符號 e.g. # < > - $ \ /
+* 然後執行
 	```
 	python main.py 專案名.md
 	```
@@ -49,6 +53,8 @@
 	* 已經排版後的markdown檔: `outline.md`
 	* 投影片: `slide.pptx`
 	* 翻譯後的文字: `translated.txt`
+* 想要更改投影片設計，請自行編輯`slidetemp.pptx`
+	* 詳見：[懶人必備！一行指令將文字轉ppt檔 - 林協霆的blog](https://htlin.site/posts/pandoc-md-to-pptx)
 
 ## 微調
 * 接下來聽聽看這些語音是否何你的意，有沒有一些翻得很奇怪的？如果要微調的話：

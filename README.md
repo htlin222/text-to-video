@@ -13,7 +13,7 @@
 	```shell
 	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc
 	```
-- install the ffmpeg
+- install the [FFmpeg](https://ffmpeg.org/)
 	```
 	brew install ffmpeg
 	```
