@@ -1,5 +1,5 @@
 # text-to-video
-
+[中文說明](ChineseREADME.md)
 ## Dependencis
 
 - apply the azure text to speech service

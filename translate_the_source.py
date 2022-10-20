@@ -28,8 +28,11 @@ def remove_unwanted_characters(text):
 
 if __name__=='__main__':
     my_file = Path(sys.argv[1])
+    folder = re.sub(r'/.*','',sys.argv[1])
+    if folder == "":
+        folder = sys.argv[2]
     if my_file.is_file():
-        translate_to_zh(sys.argv[1], sys.argv[2])
+        translate_to_zh(sys.argv[1], folder)
         print("Translate Done")
     else:
         print('please create file:', my_file, 'first, thank you.')

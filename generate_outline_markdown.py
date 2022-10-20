@@ -52,10 +52,16 @@ def open_file_then_set_outline(input_file, output_file):
             fp.write("%s\n" % item)
 
 if __name__=='__main__':
+    '''
+    python generate_outline_markdown.py folder/source.txt
+    '''
     my_file = Path(sys.argv[1])
+    folder = re.sub(r'/.*','',sys.argv[1])
+    if folder == "":
+        folder = sys.argv[2]
     if my_file.is_file():
-        open_file_then_set_outline(sys.argv[1], sys.argv[2])
-        print("✨Have generated the", str(sys.argv[1]), 'to', str(sys.argv[2]))
+        open_file_then_set_outline(sys.argv[1], folder)
+        print("✨Have generated the", str(sys.argv[1]), 'to', folder)
     else:
         print('please create file:', my_file, 'first, thank you.')
         file = open(sys.argv[1], 'w')
