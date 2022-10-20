@@ -2,6 +2,7 @@
 import os
 import re
 import sys
+import shutil
 from pathlib import Path
 import generate_outline_markdown as md
 import text_to_speech as tts
@@ -23,6 +24,8 @@ def project_init(source, output_folder):
     '''
     # set the folder and file name
     create_output_folder(output_folder)
+    source_backup = output_folder + "/" + source
+    shutil.copyfile(source, source_backup)
     outline_path = output_folder + '/outline.md'
     translated_path = output_folder + '/translated.txt'
     # create outline.md and translated.txt
@@ -37,7 +40,7 @@ if __name__=='__main__':
     folder = re.sub(r'\.[A-Za-z]*','',sys.argv[1])
     if my_file.is_file():
         project_init(sys.argv[1], folder)
-        print("✨Have generated pptx and wav files in the [", folder, '] folder')
+        print("\n✨Have generated pptx and wav files in the [", folder, '] folder')
     else:
         print('❌ please create file:', my_file, 'first, thank you.')
         file = open(sys.argv[1], 'w')

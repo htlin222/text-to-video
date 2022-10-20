@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 from pathlib import Path
 import azure.cognitiveservices.speech as speechsdk
@@ -14,6 +15,7 @@ SSML_SETTINGS = '<voice name="zh-TW-YunJheNeural"><prosody rate="15%" pitch="+5%
 SSML_START = '<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">'
 SSML_END = '</prosody></voice></speak>'
 # Test the voice: https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features
+# <voice name="zh-TW-YunJheNeural"><prosody rate="24%" pitch="-10%"> 基本元素 </prosody></voice>
 def text_to_speech(input_file,output_folder):
     with open(input_file) as f:
         lines = f.readlines()
@@ -23,7 +25,8 @@ def text_to_speech(input_file,output_folder):
         ssml = SSML_START + SSML_SETTINGS + text + SSML_END
         result = synthesizer.speak_ssml_async(ssml).get()
         stream = AudioDataStream(result)
-        filename = output_folder + "/" + str(i) + '_' + text[0:9] + '.wav'
+        filename = output_folder + "/" + str(i) + '_' + text[0:5] + '.wav'
+        filename = re.sub('\n.wav','.wav',filename)
         stream.save_to_wav_file(filename)
         audio_list.append(filename)
         i = i + 1

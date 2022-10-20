@@ -1,2 +1,3 @@
-import aspose.slides as slides
-import aspose.pydrawing as drawing
+import shutil
+
+shutil.copyfile("test1.txt", "test1/source.txt")
