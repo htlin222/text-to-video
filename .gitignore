@@ -1,6 +1,5 @@
-!output/
-output/*
 *test*
+*/
 translated.txt
 outline.md
 .DS_Store
