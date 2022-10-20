@@ -13,7 +13,7 @@
 * pptx檔 -(powerpoint輸出)-> png圖片檔
 * 語音檔 + 圖片檔 -> 影片檔
 
-## 操作方法
+## 安裝基本套件
 
 * 申請azure語音api
 * 將`SPEECH_KEY`及 `SPEECH_REGION` 加入環境變數中
