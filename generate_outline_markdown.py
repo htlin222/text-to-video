@@ -7,10 +7,14 @@ import os
 from pathlib import Path
 
 def paragraph_to_outlines(text):
+    # find if there's title set
+    title = find_title(text)
+    # remove the first line if its used for title
+    text = text.replace(title,"")
     # move quote inside the period
     sub_result = re.sub('\.("|”)', '".', text)
     # delete the dots at the beginning of the line
-    sub_result = re.sub('(●|•|•\s)','',sub_result)
+    sub_result = re.sub('(●|•|##*)\s*','',sub_result)
     # delete citations: NEJM style, Uptodate style, Clinical Key style
     sub_result = re.sub('([0-9][0-9]*,)', '', sub_result)
     sub_result = re.sub('\.(\d*-\d*)([A-Z][A-Za-z]|A|\d)', '. \g<1>', sub_result)
@@ -26,7 +30,7 @@ def paragraph_to_outlines(text):
     # delete empty line
     sub_result = re.sub('^\n','',sub_result)
     # add '-' in each line and add title
-    sub_result = "## 重點: \n\n" + re.sub(r'(?m)^','- ',sub_result)
+    sub_result = "## " + title + "\n\n" + re.sub(r'(?m)^','- ',sub_result)
     result = re.sub(r'(?m)^-\s$', '',sub_result)
     print(result)
     return result
@@ -35,6 +39,14 @@ def read_file(filename):
     textfile = open(filename, 'r')
     filetext = textfile.read()
     return filetext
+
+def find_title(text):
+    titleRegex = re.compile(r'##\s*([A-Za-z].*)\s*##')
+    title = re.findall(titleRegex, str(text))
+    if not title == []:
+        return title[0]
+    else:
+        return '重點: '
 
 def open_file_then_set_outline(input_file, output_file):
     with open(input_file) as f:

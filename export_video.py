@@ -14,7 +14,8 @@ def img_and_audio(input_image,input_audio,output_video):
     '''
     audio = sf.SoundFile(input_audio)
     duration = audio.frames / audio.samplerate
-    settings = "-c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -t " + str(duration)
+    print(duration)
+    settings = "-c:v libx264 -tune stillimage -c:a aac -b:a 96k -r 30 -pix_fmt yuv420p -t " + str(duration)
     subprocess.run(f"ffmpeg -y -loop 1 -i {input_image} -i {input_audio} {settings} {output_video}", shell=True)
 
 def batch_img_and_audio(folder):
@@ -51,7 +52,7 @@ def batch_img_and_audio(folder):
 def export_final(output_folder):
     working_dir = output_folder
     final = str(output_folder) + "_final.mp4"
-    subprocess.run(f"ffmpeg -y -f concat -safe 0 -i concat.txt -c copy {final}", cwd=working_dir, shell=True)
+    subprocess.run(f"ffmpeg -y -err_detect ignore_err -f concat -safe 0 -i concat.txt -c:v libx264 -c copy {final}", cwd=working_dir, shell=True)
 
 def check_folder(output_folder):
     current_directory = os.getcwd()
