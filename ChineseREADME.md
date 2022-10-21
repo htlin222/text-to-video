@@ -23,11 +23,11 @@
 		export SPEECH_REGION='southeastasia'
 		```
 * 安裝以下python套件：
-	```
-	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc
+	```shell
+	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc playsound
 	```
 * 安裝[FFmpeg](https://ffmpeg.org/)
-	```
+	```shell
 	brew install ffmpeg
 	```
 

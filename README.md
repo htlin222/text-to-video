@@ -11,7 +11,7 @@
 - or you can add them in `.zshrc` or `.bashrc`
 - install the python package
 	```shell
-	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc
+	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc playsound
 	```
 - install the [FFmpeg](https://ffmpeg.org/)
 	```

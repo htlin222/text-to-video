@@ -23,6 +23,7 @@ def remove_unwanted_characters(text):
     text = re.sub('>', '大於', text)
     text = re.sub('<', '小於', text)
     text = re.sub('\s', '', text)
+    text = re.sub('#|＃', '', text)
     text = re.sub('(\[|\])', '，', text)
     return text
 
