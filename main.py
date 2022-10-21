@@ -3,11 +3,13 @@ import os
 import re
 import sys
 import shutil
+import pip
 from pathlib import Path
 import generate_outline_markdown as md
 import text_to_speech as tts
 import translate_the_source as translate
 import pandoc_pptx as pptx
+
 
 def create_output_folder(output_folder):
     '''

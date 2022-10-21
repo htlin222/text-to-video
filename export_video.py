@@ -6,7 +6,6 @@ import subprocess
 import re
 import soundfile as sf
 
-# subprocess.run(ffmpeg -i ep1.png -i ep1.wav ep1.mp4)
 # output_file_path = folder + '/' + 'slide.pptx'
 def img_and_audio(input_image,input_audio,output_video):
     '''
