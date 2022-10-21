@@ -3,6 +3,13 @@ import os
 import re
 import sys
 from pathlib import Path
+from generate_outline_markdown import clean_citation
+
+def clean_up_text(text):
+    sub_result = clean_citation(text)
+    # clean up the stuff between . and the next line
+    final = re.sub('(\s[A-Za-z]*\S[a-z]*[A-Za-z]|]|\%|\)|"|\s)(\.\s\s*)([A-Z][A-Za-z]|A|\d)', '\g<1>. \g<3>', sub_result)
+    return final
 
 def translate_to_zh(input_file, output_file):
     with open(input_file) as f:
@@ -12,6 +19,7 @@ def translate_to_zh(input_file, output_file):
 
     for text in lines:
         translator = Translator()
+        text = clean_up_text(text)
         translated =translator.translate(text, dest='zh-tw')
         translated_list.append(translated.text)
 
