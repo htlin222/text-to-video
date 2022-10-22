@@ -81,3 +81,7 @@ python export_video.py 專案名
 ```
 * 你就會在`專案名`資料夾裡，得到一個`專案名_combine.mp4`檔
 
+# TODO:
+```
+soffice --headless --invisible --convert-to pdf slide.pptx
+```
