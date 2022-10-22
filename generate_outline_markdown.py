@@ -20,8 +20,10 @@ def paragraph_to_outlines(text,title_previous):
     text = text.replace(image,"")
     # clean up the citations
     sub_result = clean_citation(text)
-    # break the lines
+    # break the lines English
     sub_result = re.sub('(\s[A-Za-z]*\S[a-z]*[A-Za-z]|]|\%|\)|"|\s)(\.\s\s*)([A-Z][A-Za-z]|A|\d)', '\g<1>.\n\g<3>', sub_result)
+    sub_result = re.sub('([\u4e00-\u9fa5\u3000-\u303F])\u3002([\u4e00-\u9fa5\u3000-\u303F])','\g<1>\u3002\n\g<2>', sub_result)
+
     # Fix the Fig. Number
     sub_result = re.sub('Fig\.\n([0-9]{1,2})','Fig. \g<1>',sub_result)
     # add period if there's no period at the end of line
@@ -53,7 +55,7 @@ def read_file(filename):
     return filetext
 
 def find_title(text,previous_title):
-    titleRegex = re.compile(r'##\s*([A-Za-z].*)\s*##')
+    titleRegex = re.compile(r'##\s*([\u4e00-\u9fa5A-Za-z].*)\s*##')
     title = re.findall(titleRegex, str(text))
     if not title == []:
         return title[0]
@@ -82,10 +84,10 @@ def clean_citation(text):
     # 1. NEJM
     sub_result = re.sub(',[0-9]{1,2}', '', sub_result)
     sub_result = re.sub('[0-9]{1,2};', '', sub_result)
-    sub_result = re.sub('\.[0-9]{1,2}-[0-9]{1,2}(\s[A-Z][A-Za-z]*|\n)', '.\g<1>', sub_result)
-    sub_result = re.sub('\.[0-9]{1,2}(\s[A-Z][A-Za-z]*|$)', '.\g<1>', sub_result)
+    sub_result = re.sub('\.[0-9]{1,2}-[0-9]{1,2}(\s[\u4e00-\u9fa5A-Z][A-Za-z]*|\n)', '.\g<1>', sub_result)
+    sub_result = re.sub('\.[0-9]{1,2}(\s[\u4e00-\u9fa5A-Z][A-Za-z]*|$)', '.\g<1>', sub_result)
     # 2. Clinical Key
-    sub_result = re.sub('(\.|,|\))\s([0-9]{1,2})(\s|$)([A-Za-z]|A|\d)', '\g<1> \g<3>', sub_result)
+    sub_result = re.sub('(\.|,|\))\s([0-9]{1,2})(\s|$)([\u4e00-\u9fa5A-Za-z]|A|\d)', '\g<1> \g<3>', sub_result)
     sub_result = re.sub('[0-9]\s\.','.',sub_result)
     # 3. Uptodate
     sub_result = re.sub('\[[0-9]{1,2}\]\.', '. ', sub_result)
@@ -99,7 +101,7 @@ def open_file_then_set_outline(input_file, output_file):
         lines = f.readlines()
 
     outline_list = []
-    default_title = re.sub(r'\.[A-Za-z]*','',input_file)
+    default_title = re.sub(r'\.[\u4e00-\u9fa5A-Za-z]*','',input_file)
 
     for text in lines:
         result = paragraph_to_outlines(text, default_title)
@@ -118,10 +120,8 @@ if __name__=='__main__':
     '''
     my_file = Path(sys.argv[1])
     folder = re.sub(r'/.*','',sys.argv[1])
-    if folder == "":
-        folder = sys.argv[2]
     if my_file.is_file():
-        open_file_then_set_outline(sys.argv[1], folder)
+        open_file_then_set_outline(sys.argv[1], sys.argv[2])
         print("✨Have generated the", str(sys.argv[1]), 'to', folder)
     else:
         print('please create file:', my_file, 'first, thank you.')
