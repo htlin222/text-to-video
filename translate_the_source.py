@@ -14,12 +14,11 @@ def clean_up_text(text):
 def translate_to_zh(input_file, output_file):
     with open(input_file) as f:
         lines = f.readlines()
-
     translated_list = []
-
     for text in lines:
-        translator = Translator()
+        text = re.sub('!\[.*\]\(.*\)','',text)
         text = clean_up_text(text)
+        translator = Translator()
         translated =translator.translate(text, dest='zh-tw')
         translated_list.append(translated.text)
 
