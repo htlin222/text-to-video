@@ -1,14 +1,20 @@
-import pypandoc
 import os
 from pathlib import Path
+import sys
+import subprocess
 
-def convert_to_pptx(filename, folder):
-    output_file_path = folder + '/' + 'slide.pptx'
-    output = pypandoc.convert_file(filename,
-                                to='pptx',
-                                outputfile=output_file_path,
-                                extra_args=['--reference-doc=slidetemp.pptx'],
-                                )
+# import pypandoc
+# def convert_to_pptx_by_pypandoc(filename, folder):
+#     output_file_path = folder + '/' + 'slide.pptx'
+#     output = pypandoc.convert_file(filename,
+#                                 to='pptx',
+#                                 outputfile=output_file_path,
+#                                 extra_args=['--reference-doc=slidetemp.pptx','--resource-path=/Users/mac/text-to-video']
+#                                 )
+
+def convert_to_pptx(filename,folder):
+    # pandoc 來源檔.md -o 投影片名.pptx --reference-doc 範本檔.pptx
+    subprocess.run(f"pandoc {filename} -o {folder}/slide.pptx --reference-doc slidetemp.pptx", shell=True)
 
 def create_output_folder(output_folder):
     current_directory = os.getcwd()

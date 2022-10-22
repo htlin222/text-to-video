@@ -11,6 +11,10 @@ def paragraph_to_outlines(text,title_previous):
     title = find_title(text,title_previous)
     # remove the first line if its used for title
     text = text.replace(title,"")
+    # find image
+    image = find_image(text)
+    # remove image
+    text = text.replace(image,"")
     # clean up the citations
     sub_result = clean_citation(text)
     # break the lines
@@ -29,6 +33,8 @@ def paragraph_to_outlines(text,title_previous):
     else:
         sub_result = "## " + title + "\n\n" + re.sub(r'(?m)^','- ',sub_result)
     result = re.sub(r'(?m)^-\s$', '',sub_result)
+    if image != "":
+        result = result + "\n" + image + "\n"
     print(result)
     return result, title
 
@@ -44,6 +50,14 @@ def find_title(text,previous_title):
         return title[0]
     else:
         return previous_title
+
+def find_image(text):
+    imageRegex = re.compile(r'!\[.*\]\(.*\)')
+    image = re.findall(imageRegex, str(text))
+    if not image == []:
+        return image[0]
+    else:
+        return ""
 
 def clean_citation(text):
     # move quote inside the period
