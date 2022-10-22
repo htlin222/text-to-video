@@ -3,6 +3,7 @@ import os
 import re
 import sys
 import shutil
+import subprocess
 import pip
 from pathlib import Path
 import generate_outline_markdown as md
@@ -61,11 +62,17 @@ if __name__=='__main__':
         project_init(sys.argv[1], folder)
         print("\n✨Generated pptx, wav, video in the [", folder, '] folder')
         print("\n✨Edit translated.txt and slide.pptx in the folder PRN")
-        print("\n✨Then run: python main.py PORJECT.md fix\n")
+        print("\n✨Then run: python main.py", str(my_file) ,"fix\n")
+        choice = input("✨Do you want to open the folder? : (y/n) ")
+        if choice == 'y' or choice == 'yes':
+            subprocess.run(f"open {folder}", shell=True)
+            print("\n✨All done\n")
+        else:
+            print("\n✨All done\n")
     elif my_file.is_file() and mode == 'fix':
-        print('\nStart 🔧 export again')
+        print('\nStart 🔧 export video again')
         fix(folder)
-        print('\n✨Fixed ! \n')
+        print('\n✨Done! Your vidoe is ready to go.\n')
 
     else:
         print('❌ please create file:', my_file, 'first, thank you.')
