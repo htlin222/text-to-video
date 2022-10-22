@@ -45,7 +45,6 @@ def batch_img_and_audio(folder):
     with open(clips_txt, 'w+') as clips_txt:
         for item in clips_list:
             clips_txt.write("%s\n" % item)
-    return clips_txt
 
 #
 def export_final(output_folder):
@@ -62,6 +61,6 @@ def check_folder(output_folder):
 if __name__ == '__main__':
     folder = sys.argv[1]
     check_folder(folder)
-    clips_txt = batch_img_and_audio(folder)
+    batch_img_and_audio(folder)
     export_final(folder)
     print("\n✨Have generated the combined video in [", folder, "] folder")

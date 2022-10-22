@@ -14,7 +14,7 @@ def convert_pptx_to_image(pptx_file, folder):
     soffice_command = 'soffice --headless --invisible --convert-to pdf --outdir'
     subprocess.run(f'{soffice_command} {folder} {pptx_path}', shell=True)
     pdf_path = folder + '/slide.pdf'
-    images = convert_from_path(pdf_path)
+    images = convert_from_path(pdf_path, size=(1920,1080))
     slide_folder = folder + '/slide'
     if not os.path.exists(slide_folder):
         os.makedirs(slide_folder)

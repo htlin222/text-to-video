@@ -9,6 +9,8 @@ import generate_outline_markdown as md
 import text_to_speech as tts
 import translate_the_source as translate
 import pandoc_pptx as pptx
+import pptx_to_png as to_png
+import export_video
 
 
 def create_output_folder(output_folder):
@@ -35,7 +37,13 @@ def project_init(source, output_folder):
     translate.translate_to_zh(source, translated_path)
     # create the wav files and pptx
     pptx.convert_to_pptx(outline_path, output_folder)
+    # conver pptx to slide in slide folder
+    pptx_path = output_folder + '/slide.pptx'
+    to_png.convert_pptx_to_image(pptx_path,output_folder)
     tts.text_to_speech(translated_path, output_folder)
+    export_video.batch_img_and_audio(output_folder)
+    export_video.export_final(output_folder)
+
 
 if __name__=='__main__':
     my_file = Path(sys.argv[1])
@@ -43,6 +51,7 @@ if __name__=='__main__':
     if my_file.is_file():
         project_init(sys.argv[1], folder)
         print("\n✨Have generated pptx and wav files in the [", folder, '] folder')
+        print("\n✨Have generated the combined video in [", folder, "] folder\n")
     else:
         print('❌ please create file:', my_file, 'first, thank you.')
         file = open(sys.argv[1], 'w')

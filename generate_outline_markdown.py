@@ -60,8 +60,10 @@ def find_image(text):
         return ""
 
 def clean_citation(text):
+    # take the ',000' out to avoid been replace
+    sub_result = re.sub(',000','KILO',text)
     # move quote inside the period
-    sub_result = re.sub('\.("|”)', '".', text)
+    sub_result = re.sub('\.("|”)', '".', sub_result)
     # delete the dots at the beginning of the line
     sub_result = re.sub('(●|•|##*)\s*','',sub_result)
     # delete citations: NEJM style, Uptodate style, Clinical Key style
@@ -76,6 +78,8 @@ def clean_citation(text):
     # 3. Uptodate
     sub_result = re.sub('\[[0-9]{1,2}\]\.', '. ', sub_result)
     sub_result = re.sub('\[[0-9]{1,2}(-|,)[0-9]{1,2}\]\.', '. ', sub_result)
+    # replace KILO back to ,000
+    sub_result = re.sub('KILO',',000',sub_result)
     return sub_result
 
 def open_file_then_set_outline(input_file, output_file):
