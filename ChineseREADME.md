@@ -35,12 +35,16 @@
 	```shell
 	brew install ffmpeg
 	```
+* 安裝[Pandoc - Installing pandoc](https://pandoc.org/installing.html)
+	```shell
+	brew install pandoc
+	```
 
 ## 使用方法：
 
 ### 原始檔生成的方法
 * 將任何你要產生影片的文字檔`.md`或`.txt`加入這個repo的目錄下，
-	* 檔名不可以有空格，請用`_`底線分隔。
+	* 檔名不可以有空格，請用`_`底線分隔。支援中文
 	* 內文在建立時有幾個要點：
 		* 一段話(用enter分開)就會是一段語音檔、一頁投影片
 		* 自己衡量一下，一頁字不要太多不然會爆版
@@ -50,9 +54,9 @@
 		* 不能有空行
 * 然後執行
 	```
-	python main.py 專案名.md
+	python main.py 專案名.md init
 	```
-* 或批次執行
+* 如果想一口起生成很多個專案，可以批次:
 	```
 	python batch.py
 	```
@@ -62,26 +66,22 @@
 	* 已經排版後的markdown檔: `outline.md`
 	* 投影片: `slide.pptx`
 	* 翻譯後的文字: `translated.txt`
-* 想要更改投影片設計，請自行編輯`slidetemp.pptx`
+* 想要更改投影片模版設計，請自行編輯`slidetemp.pptx`
 	* 詳見：[懶人必備！一行指令將文字轉ppt檔 - 林協霆的blog](https://htlin.site/posts/pandoc-md-to-pptx)
 
 ## 微調
+
+* 主要調整以下兩個檔案：
+	* 投影片: `slide.pptx`
+	* 翻譯後的文字: `translated.txt`
 * 接下來聽聽看這些語音是否何你的意，有沒有一些翻得很奇怪的？如果要微調的話：
 	* 編輯 `translated.txt` 裡的文字，修一下語句不通、翻得很怪的地方
-	* 重新生成語音
-		```
-		python text_to_speech.py 專案名/translated.txt
-		```
-* 打開`pptx`檔，看看有沒有什麼排版怪怪的方，幫每一頁加上標題。
-* 輸出投影片成png，檔案取名為`slide`，圖片大小選`1920x1080`
+* 打開`pptx`檔，修正排版，但不可以增加或刪除新的頁數，不然會跟音檔對不起來。
 
-## 最後輸出成影片
-```
-python export_video.py 專案名
-```
-* 你就會在`專案名`資料夾裡，得到一個`專案名_combine.mp4`檔
+## 重新輸出
 
-# TODO:
-```
-soffice --headless --invisible --convert-to pdf slide.pptx
-```
+* 執行:
+	```
+	python main.py 專案名.md fix
+	```
+* 就會得到新生成的影片

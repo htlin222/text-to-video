@@ -60,8 +60,8 @@ if __name__=='__main__':
     if my_file.is_file() and mode == 'init':
         project_init(sys.argv[1], folder)
         print("\n✨Generated pptx, wav, video in the [", folder, '] folder')
-        print("\nEdit translated.txt and slide.pptx in the folder PRN")
-        print("\nThen run: python main.py PORJECT.md fix\n")
+        print("\n✨Edit translated.txt and slide.pptx in the folder PRN")
+        print("\n✨Then run: python main.py PORJECT.md fix\n")
     elif my_file.is_file() and mode == 'fix':
         print('\nStart 🔧 export again')
         fix(folder)
