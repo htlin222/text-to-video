@@ -18,10 +18,8 @@ def translate_to_zh(input_file, output_file):
     for text in lines:
         text = re.sub('!\[.*\]\(.*\)','',text)
         text = clean_up_text(text)
-        print(text)
         translator = Translator()
         translated =translator.translate(text, dest='zh-tw')
-        print(translated.text)
         translated_list.append(translated.text)
 
     with open(output_file, 'w+') as fp:

@@ -7,6 +7,9 @@ import os
 from pathlib import Path
 
 def paragraph_to_outlines(text,title_previous):
+    '''
+    convert paragraph to outline
+    '''
     # find if there's title set, if so, replace the old one
     title = find_title(text,title_previous)
     # remove the first line if its used for title
@@ -26,7 +29,7 @@ def paragraph_to_outlines(text,title_previous):
     # delete empty space in the beginning
     sub_result = re.sub('\n\s','\n',sub_result)
     # delete empty line
-    final_result = re.sub('^\n','',sub_result)
+    sub_result = re.sub('^\n','',sub_result)
     # add '-' in each line and add title
     if title == title_previous:
         sub_result = "## " + title + '(continued)' + "\n\n" + re.sub(r'(?m)^','- ',sub_result)
@@ -35,12 +38,18 @@ def paragraph_to_outlines(text,title_previous):
     result = re.sub(r'(?m)^-\s$', '',sub_result)
     if image != "":
         result = result + "\n" + image + "\n"
+    # if no content, then set as title page
+    if not re.match('##.*\n\n-', result):
+        result = result.replace("##","#")
     print(result)
     return result, title
 
 def read_file(filename):
-    textfile = open(filename, 'r')
-    filetext = textfile.read()
+    '''
+    open the file and read the text
+    '''
+    with open(filename, 'r', encoding='UTF-8') as textfile:
+        filetext = textfile.read()
     return filetext
 
 def find_title(text,previous_title):
@@ -52,6 +61,9 @@ def find_title(text,previous_title):
         return previous_title
 
 def find_image(text):
+    '''
+    find patter matching markdown image style ![]()
+    '''
     imageRegex = re.compile(r'!\[.*\]\(.*\)')
     image = re.findall(imageRegex, str(text))
     if not image == []:

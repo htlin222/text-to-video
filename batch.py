@@ -13,4 +13,4 @@ if __name__=='__main__':
                 filename = str(file)
                 folder = re.sub(r'\.[A-Za-z]*','', filename)
                 main.project_init(file, folder)
-                print("✨Have generated the", folder, "project")
+                print("\n✨Have generated the", folder, "project\n")
