@@ -4,7 +4,6 @@ import re
 import sys
 import shutil
 import subprocess
-import pip
 from pathlib import Path
 import generate_outline_markdown as md
 import text_to_speech as tts
@@ -57,8 +56,8 @@ def fix(output_folder):
 if __name__=='__main__':
     my_file = Path(sys.argv[1])
     folder = re.sub(r'\.[A-Za-z]*','',sys.argv[1])
-    mode = str(sys.argv[2])
-    if my_file.is_file() and mode == 'init':
+    MODE = str(sys.argv[2])
+    if my_file.is_file() and MODE == 'init':
         project_init(sys.argv[1], folder)
         print("\n✨Generated pptx, wav, video in the [", folder, '] folder')
         print("\n✨Edit translated.txt and slide.pptx in the folder PRN")
@@ -69,7 +68,7 @@ if __name__=='__main__':
             print("\n✨All done\n")
         else:
             print("\n✨All done\n")
-    elif my_file.is_file() and mode == 'fix':
+    elif my_file.is_file() and MODE == 'fix':
         print('\nStart 🔧 export video again')
         fix(folder)
         print('\n✨Done! Your vidoe is ready to go.\n')

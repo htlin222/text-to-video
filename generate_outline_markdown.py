@@ -104,10 +104,11 @@ def open_file_then_set_outline(input_file, output_file):
     default_title = re.sub(r'\.[\u4e00-\u9fa5A-Za-z]*','',input_file)
 
     for text in lines:
-        result = paragraph_to_outlines(text, default_title)
-        outline = result[0]
-        outline_list.append(outline)
-        default_title = result[1]
+        if not text.isspace():
+            result = paragraph_to_outlines(text, default_title)
+            outline = result[0]
+            outline_list.append(outline)
+            default_title = result[1]
 
     with open(output_file, 'w+') as fp:
         for item in outline_list:

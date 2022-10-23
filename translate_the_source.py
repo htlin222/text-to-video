@@ -16,11 +16,12 @@ def translate_to_zh(input_file, output_file):
         lines = f.readlines()
     translated_list = []
     for text in lines:
-        text = re.sub('!\[.*\]\(.*\)','',text)
-        text = clean_up_text(text)
-        translator = Translator()
-        translated =translator.translate(text, dest='zh-tw')
-        translated_list.append(translated.text)
+        if not text.isspace():
+            text = re.sub('!\[.*\]\(.*\)','',text)
+            text = clean_up_text(text)
+            translator = Translator()
+            translated =translator.translate(text, dest='zh-tw')
+            translated_list.append(translated.text)
 
     with open(output_file, 'w+') as fp:
         for item in translated_list:
