@@ -43,7 +43,7 @@ def paragraph_to_outlines(text,title_previous):
     # if no content, then set as title page
     if not re.match('##.*\n\n-', result):
         result = result.replace("##","#")
-    print(result)
+    # print(result)
     return result, title
 
 def read_file(filename):

@@ -27,7 +27,7 @@ def project_init(source, output_folder):
     as follows:
     '''
     # set the folder and file name
-    print('\nStart to creat the project🪴\n')
+    print('\nStart to create the project🪴\n')
     create_output_folder(output_folder)
     source_backup = output_folder + "/" + source
     shutil.copyfile(source, source_backup)
@@ -35,8 +35,9 @@ def project_init(source, output_folder):
     translated_path = output_folder + '/translated.txt'
     # create outline.md and translated.txt
     md.open_file_then_set_outline(source, outline_path)
+    print('\nStart to translate the source 🇺🇸 ✈️  🇹🇼\n')
     translate.translate_to_zh(source, translated_path)
-    # create the wav files and pptx
+    # create the pptx
     pptx.convert_to_pptx(outline_path, output_folder)
     # ===== fix =====
     # convert pptx to slide in slide folder
@@ -80,7 +81,7 @@ if __name__=='__main__':
     elif my_file.is_file() and MODE not in ('init', 'fix'):
         project_init(sys.argv[1], folder)
     else:
-        # If nothing match, will creat the file and open the folder for the user
+        # If nothing match, will create the file and open the folder for the user
         with open(sys.argv[1], 'w', encoding='UTF-8'):
             print('❌ File not found, will create', my_file, 'for you, your welcome.')
             subprocess.run("open .", shell=True, check=True)
