@@ -51,6 +51,12 @@ def export_final(output_folder):
     working_dir = output_folder
     final = str(output_folder) + "_final.mp4"
     subprocess.run(f"ffmpeg -y -err_detect ignore_err -f concat -safe 0 -i concat.txt -c:v libx264 -c copy {final}", cwd=working_dir, shell=True)
+    full_path_of_concat = output_folder + "/" + "concat.txt"
+    full_path_of_audio = output_folder + "/" + "audio_list.txt"
+    if os.path.isfile(full_path_of_concat):
+        os.remove(full_path_of_concat)
+    if os.path.isfile(full_path_of_audio):
+        os.remove(full_path_of_audio)
 
 def check_folder(output_folder):
     current_directory = os.getcwd()

@@ -39,6 +39,7 @@
 	```shell
 	brew install pandoc
 	```
+* 也可以直接執行`install_package.py`會有互動式引導安裝
 
 ## 使用方法：
 
@@ -54,15 +55,14 @@
 		* 不能有空行
 * 然後執行
 	```
-	python main.py 專案名.md init
+	python main.py 專案名.md
 	```
-* 如果想一口起生成很多個專案，可以批次:
+* 如果想一口起生成當前目錄下所有檔案，可以直接執行
 	```
-	python batch.py
+	python main.py
 	```
 * 你將會得到一個以這個檔案為名的資料夾。裡面會有幾個檔案：
 	* 編號後的語音檔: `1_前幾個字.wav`
-	* 語音檔的檔案清單: `auido_list.txt`
 	* 已經排版後的markdown檔: `outline.md`
 	* 投影片: `slide.pptx`
 	* 翻譯後的文字: `translated.txt`

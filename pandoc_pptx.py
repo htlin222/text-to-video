@@ -4,7 +4,9 @@ import sys
 import subprocess
 
 # import pypandoc
+# this method not support image link from imgur
 # def convert_to_pptx_by_pypandoc(filename, folder):
+#
 #     output_file_path = folder + '/' + 'slide.pptx'
 #     output = pypandoc.convert_file(filename,
 #                                 to='pptx',

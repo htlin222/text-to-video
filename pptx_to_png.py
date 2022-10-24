@@ -20,7 +20,7 @@ def convert_pptx_to_image(pptx_file, folder):
         os.makedirs(slide_folder)
     for i in range(len(images)):
         images[i].save(slide_folder + '/投影片' + str(i+1) + '.png', 'PNG')
-        print('saved 💾 : ', slide_folder + '/投影片' + str(i+1) + '.png')
+        print('\nsaved 💾 : ', slide_folder + '/投影片' + str(i+1) + '.png')
 
 if __name__=='__main__':
     pptx = Path(sys.argv[1])

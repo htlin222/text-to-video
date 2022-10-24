@@ -1,2 +1,0 @@
-## What is your name ##
-## Title ## Before the Covid-19 pandemic, the estimated global incidence of myocarditis was 1 to 10 cases per 100,000 persons per year.12 The highest risk was among people between 20 and 40 years of age and among men.

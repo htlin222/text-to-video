@@ -27,7 +27,7 @@ def project_init(source, output_folder):
     as follows:
     '''
     # set the folder and file name
-    print('\nStart to create the project🪴\n')
+    print('\nStart to create the project 🌱 🪴 🌴 ')
     create_output_folder(output_folder)
     source_backup = output_folder + "/" + source
     shutil.copyfile(source, source_backup)
@@ -62,15 +62,30 @@ def fix(output_folder):
         print("\n✨All done\n")
     else:
         print("\n✨All done\n")
+def batch():
+    cwd = os.getcwd()
+    for file in os.listdir(cwd):
+        if file.endswith(".md") or file.endswith(".txt"):
+            if not file.endswith("README.md"):
+                FILENAME = str(file)
+                folder = re.sub(r'\.[A-Za-z]*','', FILENAME)
+                print("\nStart generate", FILENAME,"to video")
+                project_init(file, folder)
 
 if __name__=='__main__':
-    my_file = Path(sys.argv[1])
-    folder = re.sub(r'\.[A-Za-z]*','',sys.argv[1])
     # check if user have input the MODE
+    my_file = Path("NotExist.md")
     if len(sys.argv) == 3:
         MODE = str(sys.argv[2])
-    else:
+        my_file = Path(sys.argv[1])
+        folder = re.sub(r'\.[A-Za-z]*','',sys.argv[1])
+    elif len(sys.argv) ==2:
         MODE = 'init'
+        my_file = Path(sys.argv[1])
+        folder = re.sub(r'\.[A-Za-z]*','',sys.argv[1])
+    else:
+        MODE = 'batch'
+
     # Start to decied whcih MODE will perform
     if my_file.is_file() and MODE == 'init':
         project_init(sys.argv[1], folder)
@@ -80,6 +95,8 @@ if __name__=='__main__':
         print('\n✨Done! Your vidoe is ready to go.\n')
     elif my_file.is_file() and MODE not in ('init', 'fix'):
         project_init(sys.argv[1], folder)
+    elif MODE == ('batch'):
+        batch()
     else:
         # If nothing match, will create the file and open the folder for the user
         with open(sys.argv[1], 'w', encoding='UTF-8'):
