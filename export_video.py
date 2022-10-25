@@ -4,6 +4,7 @@ import sys
 from pathlib import Path
 import subprocess
 import re
+import shutil
 import soundfile as sf
 
 # output_file_path = folder + '/' + 'slide.pptx'
@@ -39,6 +40,10 @@ def batch_img_and_audio(folder):
         filename = "file " + folder + "/" + "clip" + str(i) + ".mp4"
         filename = "file " + "clip" + str(i) + ".mp4"
         clips_list.append(filename)
+        if os.path.isfile(input_audio):
+            os.remove(input_audio)
+        if os.path.isfile(input_image):
+            os.remove(input_image)
         i = i + 1
     # write clips_list into concat.txt, which will be used later for combine into one video
     clips_txt = folder + '/' + 'concat.txt'
@@ -53,10 +58,20 @@ def export_final(output_folder):
     subprocess.run(f"ffmpeg -y -err_detect ignore_err -f concat -safe 0 -i concat.txt -c:v libx264 -c copy {final}", cwd=working_dir, shell=True)
     full_path_of_concat = output_folder + "/" + "concat.txt"
     full_path_of_audio = output_folder + "/" + "audio_list.txt"
-    if os.path.isfile(full_path_of_concat):
-        os.remove(full_path_of_concat)
+    slide_path_folder = output_folder + "/slide"
+    # Delete all the unused files
+    with open(full_path_of_concat) as f:
+        clips_count = len(f.readlines())
+        for i in range(1, clips_count+1):
+            clip_path = output_folder +  "/clip"+ str(i) + ".mp4"
+            if os.path.isfile(clip_path):
+                os.remove(clip_path)
     if os.path.isfile(full_path_of_audio):
         os.remove(full_path_of_audio)
+    if os.path.isfile(full_path_of_concat):
+        os.remove(full_path_of_concat)
+    if os.path.isdir(slide_path_folder):
+        shutil.rmtree(slide_path_folder)
 
 def check_folder(output_folder):
     current_directory = os.getcwd()

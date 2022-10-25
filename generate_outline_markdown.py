@@ -39,11 +39,13 @@ def paragraph_to_outlines(text,title_previous):
         sub_result = "## " + title + "\n\n" + re.sub(r'(?m)^','- ',sub_result)
     result = re.sub(r'(?m)^-\s$', '',sub_result)
     if image != "":
+    # if there's image, add to the end
         result = result + "\n" + image + "\n"
     # if no content, then set as title page
-    if not re.match('##.*\n\n-', result):
+    if not re.match('##.*\n\n-\s[^#]', result):
         result = result.replace("##","#")
-    # print(result)
+        result = re.sub(r"\n\n-\s*#","",result)
+        print(result)
     return result, title
 
 def read_file(filename):
@@ -56,9 +58,9 @@ def read_file(filename):
 
 def find_title(text,previous_title):
     titleRegex = re.compile(r'(##*)\s*([\u4e00-\u9fa5A-Za-z].*)\s*(##*|\n)')
-    title = re.findall(titleRegex, str(text))
-    if not title == []:
-        return title[0]
+    if not re.findall(titleRegex, str(text)) == []:
+        title = list(re.findall(titleRegex, str(text))[0])
+        return title[1]
     else:
         return previous_title
 
@@ -79,7 +81,7 @@ def clean_citation(text):
     # move quote inside the period
     sub_result = re.sub('\.("|”)', '".', sub_result)
     # delete the dots at the beginning of the line
-    sub_result = re.sub('(●|•|##*)\s*','',sub_result)
+    sub_result = re.sub('(●|•)\s*','',sub_result)
     # delete citations: NEJM style, Uptodate style, Clinical Key style
     # 1. NEJM
     sub_result = re.sub(',[0-9]{1,2}', '', sub_result)

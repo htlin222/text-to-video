@@ -28,7 +28,7 @@ def split_single_paragraph(paragraph):
     sentenceList = sentenceEnders.split(paragraph)
     return sentenceList
 
-def split_all_paragraph(input_file,output_file):
+def split_all_paragraph(input_file,output_file,page_max):
     '''
     read file line by line, check if line too long, split it ~
     '''
@@ -37,10 +37,11 @@ def split_all_paragraph(input_file,output_file):
         lines = f.readlines()
 
     main =[] # for the output_file
-    page_max = 100 # if any paragraph longer than this number
+    # page_max = 800 # if any paragraph longer than this number
 
     for paragraph in lines:
         # if the paragraph is very long, then break it
+        paragraph = md.clean_citation(paragraph)
         if not paragraph.isspace() and len(paragraph) > page_max:
             # split the paragraph into individual lines
             sentenceList = split_single_paragraph(paragraph)
@@ -66,6 +67,16 @@ def split_all_paragraph(input_file,output_file):
         for item in main:
             # write each item on a new line
             fp.write("%s\n" % item)
+
+def clear_uptodate(input_file):
+    with open(input_file, 'r') as file:
+        full_text = file.read()
+    # Remove the context below the title
+    result = re.sub(r'(#\s(.*)- UpToDate)\n((.*\n)*)(INTRODUCTION)',"",full_text)
+    result = re.sub(r'',"",result)
+
+
+    print("🥟 Uptodate is clear")
 
 if __name__ == '__main__':
     split_all_paragraph(sys.argv[1],sys.argv[2])

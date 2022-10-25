@@ -19,6 +19,7 @@ def translate_to_zh(input_file, output_file):
         if not text.isspace():
             text = re.sub('!\[.*\]\(.*\)','',text)
             text = clean_up_text(text)
+            text = re.sub("#*","",text)
             translator = Translator()
             translated =translator.translate(text, dest='zh-tw')
             translated_list.append(translated.text)

@@ -6,6 +6,7 @@ import shutil
 import subprocess
 from pathlib import Path
 import generate_outline_markdown as md
+import cleanup
 import text_to_speech as tts
 import translate_the_source as translate
 import pandoc_pptx as pptx
@@ -29,14 +30,14 @@ def project_init(source, output_folder):
     # set the folder and file name
     print('\nStart to create the project 🌱 🪴 🌴 ')
     create_output_folder(output_folder)
-    source_backup = output_folder + "/" + source
-    shutil.copyfile(source, source_backup)
+    cleanup_source = output_folder + "/" + source
+    cleanup.split_all_paragraph(source, cleanup_source, 800)
     outline_path = output_folder + '/outline.md'
     translated_path = output_folder + '/translated.txt'
     # create outline.md and translated.txt
-    md.open_file_then_set_outline(source, outline_path)
+    md.open_file_then_set_outline(cleanup_source, outline_path)
     print('\nStart to translate the source 🇺🇸 ✈️  🇹🇼\n')
-    translate.translate_to_zh(source, translated_path)
+    translate.translate_to_zh(cleanup_source, translated_path)
     # create the pptx
     pptx.convert_to_pptx(outline_path, output_folder)
     # ===== fix =====
