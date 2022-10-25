@@ -55,7 +55,7 @@ def read_file(filename):
     return filetext
 
 def find_title(text,previous_title):
-    titleRegex = re.compile(r'##\s*([\u4e00-\u9fa5A-Za-z].*)\s*##')
+    titleRegex = re.compile(r'(##*)\s*([\u4e00-\u9fa5A-Za-z].*)\s*(##*|\n)')
     title = re.findall(titleRegex, str(text))
     if not title == []:
         return title[0]
