@@ -45,7 +45,7 @@ def paragraph_to_outlines(text,title_previous):
     if not re.match('##.*\n\n-\s[^#]', result):
         result = result.replace("##","#")
         result = re.sub(r"\n\n-\s*#","",result)
-        print(result)
+        # print(result)
     return result, title
 
 def read_file(filename):
@@ -57,7 +57,7 @@ def read_file(filename):
     return filetext
 
 def find_title(text,previous_title):
-    titleRegex = re.compile(r'(##*)\s*([\u4e00-\u9fa5A-Za-z].*)\s*(##*|\n)')
+    titleRegex = re.compile(r'(##*)\s*([\u4e00-\u9fa5A-Za-z/].*)(\s)*(##*|\n)')
     if not re.findall(titleRegex, str(text)) == []:
         title = list(re.findall(titleRegex, str(text))[0])
         return title[1]

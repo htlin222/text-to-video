@@ -31,7 +31,7 @@ def project_init(source, output_folder):
     print('\nStart to create the project 🌱 🪴 🌴 ')
     create_output_folder(output_folder)
     cleanup_source = output_folder + "/" + source
-    cleanup.split_all_paragraph(source, cleanup_source, 400)
+    cleanup.split_all_paragraph(source, cleanup_source, 600)
     outline_path = output_folder + '/outline.md'
     translated_path = output_folder + '/translated.txt'
     # create outline.md and translated.txt

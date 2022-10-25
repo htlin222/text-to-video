@@ -56,10 +56,13 @@ def export_final(output_folder):
     working_dir = output_folder
     final = str(output_folder) + "_final.mp4"
     subprocess.run(f"ffmpeg -y -err_detect ignore_err -f concat -safe 0 -i concat.txt -c:v libx264 -c copy {final}", cwd=working_dir, shell=True)
+    delete_clips_audio_slide(output_folder)
+    print("Delete all the temp files")
+    # Delete all the unused files
+def delete_clips_audio_slide(output_folder):
     full_path_of_concat = output_folder + "/" + "concat.txt"
     full_path_of_audio = output_folder + "/" + "audio_list.txt"
     slide_path_folder = output_folder + "/slide"
-    # Delete all the unused files
     with open(full_path_of_concat) as f:
         clips_count = len(f.readlines())
         for i in range(1, clips_count+1):

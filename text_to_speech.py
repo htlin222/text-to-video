@@ -25,9 +25,10 @@ def text_to_speech(input_file,output_folder):
         ssml = SSML_START + SSML_SETTINGS + text + SSML_END
         result = synthesizer.speak_ssml_async(ssml).get()
         stream = AudioDataStream(result)
-        filename = output_folder + "/" + str(i) + '_' + text[0:5] + '.wav'
+        filename = output_folder + "/" + str(i) + '_voice' + '.wav'
         filename = re.sub('\n.wav','.wav',filename)
         stream.save_to_wav_file(filename)
+        print("saved 💾", filename)
         audio_list.append(filename)
         i = i + 1
     audio_list_file = output_folder + '/' + "audio_list.txt"
