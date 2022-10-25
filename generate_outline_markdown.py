@@ -34,7 +34,7 @@ def paragraph_to_outlines(text,title_previous):
     sub_result = re.sub('^\n','',sub_result)
     # add '-' in each line and add title
     if title == title_previous:
-        sub_result = "## " + title + '(continued)' + "\n\n" + re.sub(r'(?m)^','- ',sub_result)
+        sub_result = "## " + title + ' (⏩continued)' + "\n\n" + re.sub(r'(?m)^','- ',sub_result)
     else:
         sub_result = "## " + title + "\n\n" + re.sub(r'(?m)^','- ',sub_result)
     result = re.sub(r'(?m)^-\s$', '',sub_result)
