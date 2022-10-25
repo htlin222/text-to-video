@@ -46,6 +46,10 @@ def paragraph_to_outlines(text,title_previous):
         result = result.replace("##","#")
         result = re.sub(r"\n\n-\s*#","",result)
         # print(result)
+    # if title started with figure, table, pass it
+    # TODO: Didn't work....
+    if re.match('##\s[F|f]ig.*',title) or re.match('##\s[T|t]able.*', title):
+        return result, previous_title
     return result, title
 
 def read_file(filename):
@@ -60,6 +64,7 @@ def find_title(text,previous_title):
     titleRegex = re.compile(r'(##*)\s*([\u4e00-\u9fa5A-Za-z/].*)(\s)*(##*|\n)')
     if not re.findall(titleRegex, str(text)) == []:
         title = list(re.findall(titleRegex, str(text))[0])
+        # TODO: check if start with figure, table
         return title[1]
     else:
         return previous_title
@@ -116,6 +121,18 @@ def open_file_then_set_outline(input_file, output_file):
         for item in outline_list:
             # write each item on a new line
             fp.write("%s\n" % item)
+
+def fix_figure_table(input_file):
+    with open(input_file, 'r') as file:
+        full_text = file.read()
+        ### Regex Start
+    result = full_text
+    result = re.sub(r'(#\s[Figure].*)(\n*(##\sFigure).*)','#\g<1>',result)
+    result = re.sub(r'(#\s[Table].*)(\n*(##\sTable).*)','#\g<1>',result)
+    print(result)
+    with open('testOutput.md', 'w+') as fp:
+        fp.write(result)
+    print("\n🥟 clear")
 
 if __name__=='__main__':
     '''

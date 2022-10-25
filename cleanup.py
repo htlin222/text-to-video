@@ -129,10 +129,14 @@ def clean_clinicalkey(input_file):
     result = re.sub(r'\*\s*','',result)
     result = re.sub(r'\.\n\s*\n•\n\s*','. ',result)
     # Figure
-    result = re.sub(r'(Figure\s[0-9]{1,2}\.[0-9]{1,2})\n\n([A-Z].*\n)\n\(.*\)*','## \g<1>\n\n\g<2> ![image_22-10-26_03_13_17](https://i.imgur.com/VNbeWv2.jpg)',result)
+    result = re.sub(r'(Figure\s[0-9]{1,2})\.([0-9]{1,2})\n\n([A-Z].*)\n*\(.*\)*','## \g<1>-\g<2>\n\n\g<3> ![image_22-10-26_03_13_17](https://i.imgur.com/VNbeWv2.jpg)',result)
+    result = re.sub(r'(Table\s[0-9]{1,2})\.([0-9]{1,2})\n\n([A-Z].*)\n*((\|(.*)\|\n)*)','## \g<1>-\g<2>\n\n\g<3>  ![image_22-10-26_03_13_17](https://i.imgur.com/VNbeWv2.jpg)',result)
+    print("Do IT")
     result = re.sub(r'\</*[a-z]*\>','',result)
-    result = re.sub(r'\(https\S*\)','',result)
+    result = re.sub(r'\(https\://www\.clinicalkey\S*\)','',result)
+    result = re.sub(r'(## References)\n\n([0-9]{1,2}.*\n*\s*)*\[\[inbox]]','',result)
     result = re.sub(r'•\n\s*','',result)
+    result = re.sub(r'\$','',result)
 
     with open(output_file, 'w+') as fp:
         fp.write(result)
@@ -141,6 +145,7 @@ def clean_clinicalkey(input_file):
 if __name__ == '__main__':
     # split_all_paragraph(sys.argv[1],sys.argv[2])
     # clean_uptodate('uptodate.md')
-    clean_clinicalkey('ckey.md')
+    # clean_clinicalkey('ckey.md')
+    md.fix_figure_table('outline.md')
     print("✨Done")
 

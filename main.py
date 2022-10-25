@@ -36,13 +36,15 @@ def project_init(source, output_folder):
     translated_path = output_folder + '/translated.txt'
     # create outline.md and translated.txt
     md.open_file_then_set_outline(cleanup_source, outline_path)
-    print('\nStart to translate the source 🇺🇸 ✈️  🇹🇼\n')
+    print('\nStart to translate the source 🇺🇸 ✈️  🇹🇼')
     translate.translate_to_zh(cleanup_source, translated_path)
     # create the pptx
+    print('\nStart to create slide.pptx 🎁')
     pptx.convert_to_pptx(outline_path, output_folder)
+    print('\n✨Done\n')
     # ===== fix =====
     # convert pptx to slide in slide folder
-    fix(output_folder)
+    # fix(output_folder)
 
 def fix(output_folder):
     '''
