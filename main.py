@@ -12,6 +12,7 @@ import translate_the_source as translate
 import pandoc_pptx as pptx
 import pptx_to_png as to_png
 import export_video
+import dictionary
 
 
 def create_output_folder(output_folder):
@@ -30,23 +31,29 @@ def project_init(source, output_folder):
     # set the folder and file name
     print('\nStart to create the project 🌱 🪴 🌴 ')
     create_output_folder(output_folder)
-    cleanup_source = output_folder + "/" + source
-    cleanup.split_all_paragraph(source, cleanup_source, 600)
+    cleaned_source = output_folder + "/cleaned_" + source
+    splitted_source = output_folder + "/splitted_" + source
+
+    # clean first
+    cleanup.clean_all(source, cleaned_source)
+    # then split
+    cleanup.split_all_paragraph(cleaned_source, splitted_source , 600)
     outline_path = output_folder + '/outline.md'
     translated_path = output_folder + '/translated.txt'
     # create outline.md and translated.txt
-    md.open_file_then_set_outline(cleanup_source, outline_path)
+    md.open_file_then_set_outline(splitted_source, outline_path)
     print('\nStart to translate the source 🇺🇸 ✈️  🇹🇼')
-    translate.translate_to_zh(cleanup_source, translated_path)
+    translate.translate_to_zh(splitted_source, translated_path)
     # create the pptx
     print('\nStart to create slide.pptx 🎁')
     pptx.convert_to_pptx(outline_path, output_folder)
     print('\n✨Done\n')
-    # ===== fix =====
-    # convert pptx to slide in slide folder
-    # fix(output_folder)
+    # ===== export video or not =====
+    answer = input("Do you want to export video? (y/n): ")
+    if answer == 'y':
+        export_final(output_folder)
 
-def fix(output_folder):
+def export_final(output_folder):
     '''
     export again after fixed the error
     '''
@@ -92,9 +99,9 @@ if __name__=='__main__':
     # Start to decied whcih MODE will perform
     if my_file.is_file() and MODE == 'init':
         project_init(sys.argv[1], folder)
-    elif my_file.is_file() and MODE == 'fix':
-        print('\nStart 🔧 export video again')
-        fix(folder)
+    elif my_file.is_file() and MODE == 'export':
+        print('\nStart 🔧 export video')
+        export_final(folder)
         print('\n✨Done! Your vidoe is ready to go.\n')
     elif my_file.is_file() and MODE not in ('init', 'fix'):
         project_init(sys.argv[1], folder)

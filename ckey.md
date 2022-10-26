@@ -1,320 +1,350 @@
-# Hypercalcemia ClinicalKey 臨床醫學資料庫
-## Summary of Key Points
+# Pulmonary complications ClinicalKey 臨床醫學資料庫
+## Aspiration
 
-## Incidence
-    
-Hypercalcemia is a common metabolic complication associated with malignant diseaseHypercalcemia is frequently seen in more advanced malignancy and is associated with poorer prognosis.
-    
+## 1
 
-## Etiology
-    
-The three main mechanisms are tumor secretion of parathyroid hormone–related peptide (PTHrP); production of 1,25(OH) <sub>2 </sub> D by autonomous 1α-hydroxylase; and increasing bone resorption by osteolytic metastases through the RANKL pathway.
-    
+## What is aspiration?
 
-## Evaluation of the Patient
-    
-Determine of the severity of hypercalcemia and underlying malignancyThe total calcium concentration must be corrected for serum albumin concentrationClose attention to volume status and renal function is mandatoryCauses of hypercalcemia other than malignancy should be consideredPatients with symptoms caused by their hypercalcemia should be treated as severely affected, irrespective of the absolute calcium level.
-    
+Aspiration is the passage of material from the pharynx into the trachea. Aspirated material can originate from the stomach, esophagus, mouth, or nose. The materials involved can be particulate matter (e.g., food), a foreign body, fluid (e.g., blood, saliva) or gastrointestinal contents. Aspiration can cause a pneumonitis or a pneumonia, with the former occurring most often as a complication on induction of anesthesia.
 
-## Treatment
-    
-Antitumor therapy should be implemented to treat underlying malignancyVolume expansion with intravenous fluids is important for calciuresis and treatment of associated renal insufficiencyAntiresorptive therapy and bisphosphonates are first-line therapyOther therapies targeting underlying or additional causes can be second-line therapy.
-    
+## 2
 
-Hypercalcemia is a common complication in patients with malignancy, often seen in more advanced disease, and is associated with a poorer prognosis. Although the overall annualprevalence of hypercalcemia of malignancy in patients with stage IV cancer is 1.46 to 2.74, the incidence varies widely with the type of malignancy. Adult T-cell leukemia and lymphoma have the highest incidence, as high as 70% in some reports. Other malignancies such as multiple myeloma have rates of hypercalcemia around 30%. Solid tumors such as lung and breast cancers are associated with hypercalcemia about 12% and 30% of the time, respectively. Hypercalcemia of malignancy results from abnormal handling of calcium from bone resorption, intestinal absorption, or renal excretion.
+## What differentiates aspiration pneumonitis from aspiration pneumonia?
 
-## Calcium Physiology
+The primary pathophysiology of aspiration pneumonitis is *acute inflammation* because of chemical irritation of the tracheobronchial tree, caused by sterile, acidic, gastric contents containing digestive enzymes and bile acids. Aspiration pneumonia, however, is primarily *infectious* because of aspiration of bacteria in patients who are frail, elderly, and/or immunocompromised, and is associated with poor dentition and dysphagia. A key differentiating factor between aspiration pneumonitis and aspiration pneumonia is the acidity and source of the vomitus. Aspiration of acidic gastric contents not only irritates the tracheobronchial tree directly, but also activates digestive enzymes (i.e., pepsinogen), which may contribute to aspiration pneumonitis. The source of the vomitus in aspiration pneumonitis is the stomach, whereas aspiration pneumonia is often caused by bacteria from the oropharynx. Aspiration pneumonia, however, can be caused by the aspiration of gastric contents particularly if patients are on proton-pump inhibitors or histamine-2 (H2) antagonist, which increases the gastric pH, leading to gastric colonization of bacteria. The presentation of aspiration pneumonitis is more acute than aspiration pneumonia and is more commonly associated with anesthesia.
 
-The body's supply of calcium is divided into three separate and distinct compartments, with the skeleton having the largest calcium reserve ( [Fig. 35.1](https://www.clinicalkey.com/f0010) ). The other two compartments are the intracellular fluid (ICF) and extracellular fluid (ECF). The movement of calcium between compartments is regulated by physical constraints (i.e., cell membranes and calcium-binding proteins) and by hormonal regulation (parathyroid hormone \[PTH\] and vitamin D). The main concern in this chapter is a high level of calcium in the ECF and how to prevent and/or treat it in the setting of malignancy. Under normal physiologic conditions, the extracellular calcium level is highly regulated to maintain the calcium levels within a very narrow range despite constant input and outflow from other organs.
+## 3
 
-Figure 35.1
+## How is aspiration pneumonitis and aspiration pneumonia treated?
 
-Normal calcium homeostasis. Ca,Calcium; ECF,extracellular fluid.
+Aspiration pneumonitis is treated with supportive care and aspiration pneumonia with antibiotics. It is important to note that there is a degree of overlap between aspiration pneumonia and aspiration pneumonitis, and some patients with aspiration pneumonitis can develop a pneumonia.
 
-(From Mundy GR. Calcium Homeostasis: Hypercalcemia and Hypocalcemia.London: Martin Dunitz; 1990. Reprinted with permission.)
+## 4
 
-The organs that control the ECF calcium levels are the gastrointestinal (GI) tract, kidney, and bone. Calcium intake and the resulting absorption through the GI tract is one source for increased ECF calcium (prevalent in malignancies that produce 1,25\[OH\] <sub>2</sub> D, which increases the absorption of calcium). Failure by the kidney to excrete calcium in large enough amounts is one of the primary mechanisms of hypercalcemia in malignancies that produce parathyroid hormone–related peptide (PTHrP), and osteoclastic resorption of bone tissue with the release of calcium into the ECF can be a direct or indirect effect of some cancers.
+## What is Mendelson syndrome?
 
-In normal calcium physiology, the ECF calcium is maintained in a very narrow therapeutic range. A slight drop in ECF calcium signals the release of PTH from the parathyroid glands. PTH's immediate effect is to raise the renal threshold for calcium excretion, increasing calcium reabsorption. The stimulation of 1α-hydroxylase enzyme increases the production of 1,25(OH) <sub>2</sub> D, which stimulates calcium absorption from the GI tract and may also stimulate the release of calcium from bone. PTH also has a direct effect on osteoblasts signaling to osteoclasts, resulting in bone tissue remodeling and calcium release. Once the ECF calcium level is restored to normal, the PTH release ceases.
+Mendelson syndrome was the first description of aspiration pneumonitis in the literature. An obstetrician named Curtis Mendelson described this syndrome as dyspnea, cyanosis, and tachycardia in obstetric patients who had aspirated while receiving general anesthesia. He also described the immediate complications of aspiration pneumonitis as asthma-like (bronchospasm, wheezing, hypercapnia, etc.), which occurred if the gastric contents were acidic, whereas if the aspiration volume was large and not acidic, the respiratory pathology was caused by obstruction of the airways leading to atelectasis and hypoxemia. He distinguished the pathology of aspiration pneumonitis as irritative as opposed to aspiration pneumonia, which is infectious. This landmark paper shaped our current preoperative fasting guidelines to reduce gastric volumes and improved our anesthetic techniques for patients at risk for aspiration, such as giving preoperative medications to neutralize gastric pH and performing rapid sequence induction and intubation (also known as rapid sequence induction \[RSI\]).
 
-The osteoclast is responsible for increasing bone resorption, and this process is tightly linked to the osteoblasts' function of bone formation. One mechanism for keeping these processes tightly linked is signaling between the cells through the RANK/RANKL/OPG pathway. RANKL is the receptor activator of nuclear factor–κB ligand. It is produced by osteoblasts and other cells by the confluence of several hormones and cytokines. RANKL stimulates osteoclast precursors to form osteoclasts; osteoprotegerin (OPG) is a natural decoy for RANKL, keeping the delicate balance between bone resorption and bone formation.
+## 5
 
-There are three main mechanisms that result in hypercalcemia of malignancy. First, the most common (80%) is tumor secretion of PTHrP, which can act similarly to PTH, resulting in hypercalcemia. Second, production of 1,25(OH) <sub>2</sub> D by autonomous 1α-hydroxylase in the tumor results in increased absorption of calcium. Third, osteolytic metastases can directly or indirectly increase bone resorption, mainly through the RANKL pathway.
+## What are the specific risk factors for a vomitus to cause aspiration pneumonitis?
 
-## Parathyroid Hormone–Related Peptide
+The two primary risk factors for the development of aspiration pneumonitis are the following:
 
-The most common cause of hypercalcemia in patients with solid tumors is the secretion of PTHrP. This is also known as humoral hypercalcemia of malignancy.This can occur with lung, head and neck, renal, bladder, breast, or ovarian cancer; non-Hodgkin lymphoma, chronic myeloid leukemia; and adult T-cell lymphoma. Release of PTHrP into the circulation results in stimulation of the PTH receptor in the bone and kidney. This increases bone resorption and increases the distal tubular calcium reabsorption, resulting in release of calcium from the bone as well as a decreased ability to excrete it. It is interesting to note, however, that it does not increase production of 1,25(OH) <sub>2</sub> D.
+*   1)
 
-## 1,25(OH) <sub>2 </sub> D Production
+    pH of gastric contents under 2.5
 
-Under normal circumstances, many cells in the body have the machinery to convert 25(OH)D to 1,25(OH) <sub>2</sub> D with intracellular 1α-hydroxylase. Intracellular 1,25(OH) <sub>2</sub> D is for the cell's internal use, and after it is used it is catabolized by 24-hydroxylase to inactive 1,24,25(OH) <sub>3</sub> D; it is then further metabolized and excreted. It has no effect on the systemic calcium regulation, which is under the tight control of PTH. This intracellular 1α-hydroxylase production of 1,25(OH) <sub>2</sub> D becomes a risk for hypercalcemia when it is released into the circulation. This is an important cause of hypercalcemia in granulomatous disease, but also in Hodgkin and non-Hodgkin lymphoma. The elevated 1,25(OH) <sub>2</sub> D increases GI calcium absorption and possibly bone resorption.
+*   2)
 
-## Bone Resorption
+    Gastric volumes over 25 mL
 
-The tumors that are classically associated with hypercalcemia of malignancy from increased bone resorption and the resultant release of calcium are breast cancer and multiple myeloma. Also, non–small cell lung, renal, and thyroid cancers, as well as lymphoma and melanoma, can cause osteolytic lesions. The bone resorption that occurs is primarily a result of various factors produced by tumors acting to increase osteoclast activity. For example, myeloma cells can produce RANKL, the key stimulator of physiologic osteoclast activity. Also, factors such as interleukin (IL)-6 and other cytokines directly increase osteoclast function. Breast cancer has a similar effect on osteoclasts through the production of locally produced PTHrP, which binds to marrow stromal cells that produce RANKL, which in turn stimulates osteoclasts. Because this is local production of PTHrP, it does not result in measurable systemic levels of PTHrP as in some other cancers.
 
-## Parathyroid Hormone–Mediated Hypercalcemia
+Aspiration of gastric contents containing small volumes (< 25 mL) and low acidity (pH > 2.5) are less likely to cause clinically significant aspiration pneumonitis.
 
-PTH-mediated causes of hypercalcemia also need to be considered as a possible mechanism of hypercalcemia associated with malignancy. The differential diagnosis includes primary hyperparathyroidism as a result of parathyroid adenoma(s) or hyperplasia, parathyroid cancer, or ectopic production of PTH. Primary hyperparathyroidism occurs in 1 of 1000 people; it is three times more common in women than in men, especially after the age of 45, with a peak incidence in the seventh decade, and is more common in those with a history of head and neck irradiation and chronic lithium therapy. There have also been many case reports of multiple concurrent causes of hypercalcemia in patients with malignancy, such as concurrent primary hyperparathyroidism and humoral hypercalcemia of malignancy. Parathyroid carcinoma is a rare cause of primary hyperparathyroidism in which the serum calcium is usually severely elevated (>14 mg/dL) in association with a neck mass. Ectopic production of PTH from a carcinoma of the ovaries and small cell carcinoma have been described.
+## 6
 
-## Rare Causes of Hypercalcemia of Malignancy
+## How often does aspiration occur with anesthesia, and what is the morbidity and mortality rate?
 
-## Pseudohypercalcemia
+The incidence of significant aspiration is 1 per 10,000 anesthetics. Studies of anesthetics in children demonstrate about twice that occurrence. The average hospital stay after aspiration is 21 days, much of which may be in intensive care. Complications range from bronchospasm, pneumonia, and acute respiratory distress syndrome (ARDS), lung abscess, and empyema. The average mortality rate is 5%.
 
-Another rare cause of hypercalcemia is pseudohypercalcemia, so named because it is caused by an abnormality in calcium binding to an abnormal immunoglobulin or by interference with the measurement method. This has been reported in multiple myeloma with binding of calcium to immunoglobulin G lambda (IgGλ) M protein and in two patients with IgM paraprotein that interfered with calcium measurements performed by autoanalyzer but not by atomic absorption spectrophotometry.
+## 7
 
-## Tamoxifen
+## What are risk factors for aspiration with anesthesia?
 
-Patients with breast cancer with osteolytic or mixed lytic and blastic bone metastases can develop hypercalcemia when started on tamoxifen therapy. It is thought to develop from release by breast cancer metastases of cytokines that stimulate the activity of osteoclasts. The hypercalcemia develops within weeks of initiation of tamoxifen and resolves shortly after use of the drug is stopped.
+It is important to emphasize that aspiration risk is not binary and that a continuum exists between low and high risk. Risk factors for aspiration include the following:
 
-## Evaluation of the Patient
+*   •
 
-Several major mechanisms account for malignancy-related hypercalcemia, and hence careful evaluation of a patient should include a thorough history with evaluation of clinical signs and symptoms, the presence of underlying malignancy, and its duration and course and a review of medications. This should be followed by biochemical investigation to identify the cause of hypercalcemia.
+    Extremes of age
 
-## Clinical Manifestations
+*   •
 
-Symptoms of hypercalcemia are dependent on at least two factors: the degree of hypercalcemia (mild, moderate, or severe hypercalcemia) and the rapidity of change in serum calcium. Hypercalcemia is categorized according to the serum total calcium level : mild hypercalcemia, 10.5 to 11.9 mg/dL; moderate hypercalcemia, 12 to 13.9 mg/dL; and severe hypercalcemia, 14 mg/dL or greater. Mild hypercalcemia can be asymptomatic or associated with mild nonspecific symptoms such as lethargy and pain. In contrast, severe, rapidly progressive hypercalcemia can be associated with varying symptoms affecting the major organ systems, including neuropsychiatric, GI, renal, musculoskeletal, and cardiovascular symptoms. Patients with hypercalcemia of malignancy have a higher degree of hypercalcemia and develop it over a shorter period of time, and therefore are more symptomatic than patients with other causes of hypercalcemia.
+    Emergency operations
 
-GI symptoms are present in nearly all affected individuals. Mild elevation of calcium may manifest as anorexia and constipation. Patients with severe hypercalcemia may develop nausea and vomiting, but these conditions can easily be confused with the adverse effects of tumor treatment or with symptoms produced directly by the tumor itself. Cramping abdominal pains, such as those seen in persons with primary hyperparathyroidism, are encountered occasionally, but acute pancreatitis or peptic ulceration complicating the hypercalcemia of malignancy is extremely rare.
+*   •
 
-The major effect of hypercalcemia on the kidney is to impair renal concentrating ability to handle the abnormal calcium load, and the hypercalcemia is aggravated. Tubular damage can manifest as acquired renal tubular acidosis, glycosuria, and aminoaciduria. Renal manifestations consist of nephrogenic diabetes insipidus with resultant polyuria. All patients with clinically overt hypercalcemia are volume depleted, explained by polyuria and decreased oral intake due to nausea and vomiting, causing a rise in creatinine and a decrease in glomerular filtration rate. Nephrocalcinosis and nephrolithiasis require hypercalcemia of a prolonged duration and are therefore seen in more chronic cases.
+    Type of surgery (most common in cases of esophageal, upper abdominal, or emergent laparotomy operations)
 
-Neuropsychiatric symptoms of apathy, mood changes, and fatigue are frequently seen as symptoms of hypercalcemia that can be overlooked and ascribed to the underlying neoplasm. Muscle weakness itself can be profound and can confine the patient to bed. This immobility leads to further calcium mobilization and enhances the hypercalcemia. As hypercalcemia continues to worsen, severe symptomatology, including changes in mental status, confusion, and finally coma may supervene. Rarely, patients may develop a syndrome of posterior reversible leukoencephalopathy (PRES) manifesting with headaches, seizures, and imaging findings of subcortical edema caused by cerebral vasoconstriction, endothelial dysfunction, and systemic inflammation.
+*   •
 
-Cardiovascular system manifestations are seen as shortening of the QT interval on the electrocardiogram. Patients with severe hypercalcemia may develop malignant ventricular arrhythmias such as ventricular fibrillation.
+    Recent meal
 
-Bone pain is a frequent symptom of both malignant disease and hypercalcemia. Clearly, bone pain can be related to the presence of metastases within bone that cause areas of increased intramedullary pressure, ischemia, or microfractures, but the symptom is also present in the absence of demonstrable metastatic disease.
+*   •
 
-## Laboratory Investigations
+    Delayed gastric emptying (narcotics, diabetes, trauma, pain, intraabdominal infections, and end-stage renal disease)
 
-Measurement of the serum calcium is the first step in evaluation of suspected hypercalcemia. Total serum calcium, which includes both carrier-bound (40% bound to albumin) and unbound calcium, is most commonly used. Because calcium homeostasis is greatly affected by albumin concentration, a serum albumin measurement is necessary for interpretation of the serum calcium level. If the albumin is abnormal, the serum calcium should be corrected for the serum albumin using the following formula:
+*   •
 
-$<math><mtable><mtr><mtd><mtext>Ca</mtext><mo>(</mo><mtext>corrected mg/dL</mtext><mo>)</mo><mo>=</mo><mtext>serum Ca</mtext><mo>(</mo><mtext>mg/dL</mtext><mo>)</mo></mtd></mtr><mtr><mtd><mtext></mtext><mo>=</mo><mo>[</mo><mn>0</mn><mo>.</mo><mtext>8</mtext><mo>(</mo><mn>4</mn><mo>.</mo><mn>0</mn><mo>−</mo><mtext>serum albumin g/dL</mtext><mo>)</mo><mo>]</mo></mtd></mtr></mtable></math>$
+    Gastroesophageal reflux disease (GERD; decreased lower esophageal sphincter tone, hiatal hernia)
 
-Ionized calcium is the measure of the active form of calcium and can be used in certain situations in which serum protein levels are altered—for example, malnourished patients or patients with a protein-losing condition (e.g., nephrotic syndrome, protein-losing enteropathy) or myeloma, in which calcium binding immunoglobulins are produced. It is important to remember that the albumin–calcium system is highly sensitive to pH, and changes in pH can alter the fraction of calcium ions bound to albumin. For example, in hyperventilation causing respiratory alkalosis the ionized calcium decreases acutely, whereas acidosis resulting in reductions of pH can cause the ionized calcium to rise acutely, both resulting in relatively rapid shifts in ionized calcium. So, ionized calcium also has its limitations and can be inaccurate. Therefore it is advised to confirm elevated serum calcium with a repeat test to ensure these are not spurious results.
+*   •
 
-Nevertheless, from the conceptual perspective, hypercalcemia can be divided into PTH-mediated and non–PTH-mediated conditions (after confirmation of truly elevated calcium); the next step in evaluating a patient with malignancy-related hypercalcemia consists of measuring both PTH and PTHrP. PTH and PTHrP are similar molecules; therefore both are not concurrently elevated unless there are multiple causes. In most cases of malignancy, serum PTH levels should be suppressed or low normal. High-normal PTH levels in the setting of hypercalcemia are inappropriate and suggest the presence of PTH-mediated hypercalcemia or parathyroid carcinoma. PTHrP levels will be elevated in cases of humoral hypercalcemia of malignancy and hence should be measured routinely in the setting of malignancy. Serum phosphorus and other electrolytes should be measured because hypercalcemia due to PTHrP or PTH can cause hypophosphatemia, hyperchloremia, and a mild metabolic alkalosis.
+    Trauma
 
-Additional laboratory measurement of both 25(OH)D and 1,25(OH) <sub>2</sub> D levels to screen for vitamin D–mediated hypercalcemia is indicated. In patients with low levels of PTH, PTHrP, and 1,25(OH) <sub>2</sub> D, one might consider hypercalcemia due to osteolytic metastases as the cause of malignancy-related hypercalcemia. However, it is important to note that more than one mechanism of malignancy-associated hypercalcemia can be seen in a particular patient. The pattern of PTH, PTHrP, and 1,25(OH) <sub>2</sub> D values can often be helpful when determining the cause of hypercalcemia as shown in [Table 35.1](https://www.clinicalkey.com/t0010) .
+*   •
 
-Table 35.1
+    Pregnancy
 
-Laboratory Patterns for Hypercalcemia by Etiology
+*   •
 
-| Etiology | Tumors | PTH | PTHrP | 1,25(OH) <sub>2 </sub> D |
-| --- | --- | --- | --- | --- |
-| Humoral hypercalcemia of malignancy (PTHrP mediated) | Lung cancer, head and neck cancers, renal cancer, bladder cancer, breast cancer, ovarian cancer, non-Hodgkin lymphoma, chronic myeloid leukemia, adult T-cell lymphoma | Low | High | Low or normal |
-| 1,25(OH) <sub>2 </sub> D mediated | Hodgkin and non-Hodgkin lymphomas | Low | Low | High |
-| Local osteolytic hypercalcemia | Breast cancer, multiple myeloma, non–small cell lung cancer, lymphoma, renal cancer, melanoma, thyroid cancer | Low | Low | Normal |
-| PTH mediated hypercalcemia | Benign parathyroid adenoma/hyperplasia, parathyroid cancer, ectopic hyperparathyroidism (ovarian cancer and small cell lung cancer) | High | Low | High |
+    Depressed level of consciousness (i.e., Glasgow Coma Scale < 8)
 
-PTH,Parathyroid hormone; PTHrP,parathyroid hormone–related peptide.
+*   •
 
-Other investigations should include a complete blood cell count, measurement of blood urea nitrogen, and measurement of creatinine with estimated glomerular filtration rate to assess renal status. Also, kidney function can affect the serum PTH level. Renal insufficiency stimulates PTH production because it inhibits renal 1α-hydroxylase. Measures of osteoblastic function, such as alkaline phosphatase and osteocalcin, have little to offer in the diagnosis or management of hypercalcemia. Rare causes of hypercalcemia can include vitamin A toxicity; levels may be checked if the patient is suspected to have taken a large dose of supplements. If multiple myeloma is suspected based on evaluation, serum and urine protein electrophoresis or immunofixation along with a skeletal survey is indicated. If the cause is clear based on the findings of the aforementioned workup, then a 24-hour urine analysis for calcium and creatinine is not routinely performed. Uncommonly, 24-hour urine calcium clearance–to–creatinine clearance ratio (FeCa) can be valuable to differentiate between primary hyperparathyroidism and familial hypocalciuric hypercalcemia if the course has been indolent, there is a family history of hypercalcemia, and the patient does not have an active cancer that can account for the hypercalcemia. If the FeCa is low (below 0.01), then familial hypocalciuric hypercalcemia should be suspected, and definitive evaluation can include genetic testing for mutations in the CASR, AP2S1,or GNA11genes.
+    Morbid obesity (higher incidence of hiatal hernia)
 
-Radiographs and isotope bone scans might be pertinent for prognosis and follow-up but do not help delineate the cause of the hypercalcemia, nor are they useful in predicting the response to therapy. Electrocardiographic changes are not infrequent in hypercalcemia. Shortening of the corrected QT interval is the most commonly recognized change, but severe bradyarrhythmias may also occur, so an electrocardiogram can be ordered if the patient is admitted with hypercalcemia.
+*   •
 
-See the flowchart in [Fig. 35.2](https://www.clinicalkey.com/f0015) for an overview of diagnosing hypercalcemia of malignancy.
+    Difficult airway
 
-Figure 35.2
+*   •
 
-Algorithm for evaluation of hypercalcemia of malignancy. PTH,Parathyroid hormone; PTHrP,parathyroid hormone–related peptide.
+    Neuromuscular disease (impaired ability to protect their airway)
 
-(Copyright 2016 by Anery Patel. Used with permission.)
+*   •
 
-## Treatment
+    Esophageal disease (e.g., scleroderma, achalasia, diverticulum, Zenker diverticulum, prior esophagectomy/gastrectomy)
 
-The severity of hypercalcemia and associated symptoms should dictate the aggressiveness of therapy for hypercalcemia of malignancy. Severe hypercalcemia is usually associated with renal insufficiency, volume contraction, and neurologic symptoms requiring immediate treatment, often on an inpatient basis. Moderate hypercalcemia can be associated with fewer symptoms and end-organ manifestations, and mild hypercalcemia can be asymptomatic and may not require immediate therapy. Workup for underlying etiology is important in those who do not need immediate therapy; however, if hypercalcemia is severe, treatment needs to be initiated simultaneously with the workup.
 
-Treatment of hypercalcemia involves treating the underlying malignancy as the primary goal of therapy for all categories of hypercalcemia of malignancy. For those with moderate to severe hypercalcemia, additional concurrent therapy is also indicated.
 
-Additional treatment modalities focus on the cause and mechanism of action causing the hypercalcemia. In general, all patients with malignancy-associated hypercalcemia have volume depletion, increased osteoclastic bone resorption, and increased renal tubular calcium reabsorption, so additional therapies should target these mechanisms. Additional causes that can be targeted include increased intestinal calcium reabsorption (for those with extrarenal 1,25\[OH\] <sub>2</sub> D production) and increased PTH. It is important to thoroughly review the patient’s medication list and discontinue all medications that can worsen hypercalcemia, including calcium, vitamin D, vitamin A, thiazide diuretics, lithium, and theophylline. Early mobilization is important but can be difficult in patients with advanced malignant disease.
+## 8
 
-## Restoration of Intravascular Volume and Promotion of Renal Calcium Excretion
+## What precautions can be undertaken before anesthetic induction to prevent aspiration or mitigate its sequelae?
 
-Volume depletion is extremely common and often occurs with concurrent renal insufficiency in patients with hypercalcemia. Restoration of the normal circulating blood volume and the glomerular filtration rate will increase the fractional excretion of calcium as well as improve renal function.
+The main precaution is to recognize which patients are at risk. Patients having elective surgical procedures should be fasted per American Society of Anesthesiologists guidelines. Before anesthetic induction, oral nonparticulate antacids, such as sodium citrate can be administered to patients at risk for aspiration (e.g., severe uncontrolled GERD). This functions to raise the gastric pH and lessen the severity of the pneumonitis if aspiration were to occur. H2-receptor antagonists (e.g., cimetidine, ranitidine, and famotidine) can be used to raise the gastric pH as well, but must be administered approximately 30 to 60 minutes before induction of anesthesia to be effective. The use of proton-pump inhibitors in place of, or in concert with, H2 antagonists has not proven to be more efficacious. The use of orogastric or nasogastric drainage before induction is most effective in patients with intestinal obstruction. In situ nasogastric tubes should be suctioned before induction in this patient population.
 
-Treatment is with intravenous (IV) fluids, preferably isotonic saline. There are many algorithms for how to give IV fluids; in general, it is important to restore euvolemia without producing volume overload. A common regimen is to start with an initial bolus of 1 to 2 L followed by maintenance fluids of 150 to 300 mL/h for the next 2 to 3 days or until volume repletion has been achieved. One needs to be cautious in patients with congestive heart failure or anuric renal failure. Smaller volumes of isotonic saline may be indicated to avoid volume overload. Monitoring and replacement of other electrolytes such as potassium and magnesium are important during volume replacement because levels of these electrolytes can often become low.
+## 9
 
-Furosemide has historically been used to promote calciuresis; however, it should not be routinely used in the treatment of hypercalcemia of malignancy. It should be reserved only for those with congestive heart failure and for those who need diuresis.
+## How should anesthesia be induced in patients at risk for aspiration?
 
-## Reduction of Bone Resorption
+RSI and intubation is the gold standard in rapidly securing an airway in patients at risk of aspiration. This process involves administering rapid acting neuromuscular blocking agents, cricoid pressure, and the avoidance of mask ventilation. Discussions on the efficacy and potential hazards of cricoid pressure continue, but to date it continues to be recommended for RSI and intubation. A regional anesthetic with little to no sedation is a potential alternative in patients at risk of aspiration, such as obstetric patients undergoing a cesarean section with a spinal anesthetic. Patients with difficult airways may require an awake intubation; however, overly sedating or topicalization of the patient’s airway with local anesthetic may compromise the patient’s ability to protect their airway. Therefore patients at risk for aspiration undergoing an awake intubation should remain awake with little to no sedation given and topical local anesthetic should only be applied above the glottis to preserve airway reflects below this anatomic level.
 
-## Bisphosphonates
+## 10
 
-After initial volume repletion, treatment targeting reduction of bone resorption should be considered. The standard of care for treatment of acute hypercalcemia of malignancy is antiresorptive therapy with bisphosphonates.
+## Review the clinical signs and symptoms after aspiration.
 
-Bisphosphonates are potent inhibitors of bone resorption and are used to inhibit bone resorption caused by tumor and treat hypercalcemia. Bisphosphonates can also reduce morbidity in patients with cancer by decreasing pain and preventing fractures and new bone metastases.
+Fever occurs in over 90% of aspiration cases, with tachypnea and rales in at least 70%. Cough, cyanosis, and wheezing occur in 30% to 40% of cases. Aspiration may occur silently—without the anesthesiologist's knowledge—during anesthesia. Any of the previous clinical deviations from the expected course may signal an aspiration event. Radiographic changes may take hours to occur and may be negative, especially if radiographic images are taken soon after an event.
 
-Bisphosphonates were originally developed in the mid-19th century in Germany, and etidronate was the first bisphosphonate used as a human treatment. Bisphosphonates are structural analogues to pyrophosphate ( [Fig. 35.3](https://www.clinicalkey.com/f0020) ). The potency of the bisphosphonate is determined by each compound's structure. Zoledronic acid is the most potent bisphosphonate—100 times more potent than pamidronate.
+## 11
 
-Figure 35.3
+## When is a patient suspected of aspiration believed to be out of danger?
 
-Structural formulas of commonly studied bisphosphonates in relation to the generic bisphosphonate and to pyrophosphate.
+The patient who shows none of the previously mentioned signs or symptoms and has no increased oxygen requirement at the end of 2 hours is likely to recover completely.
 
-Although many bisphosphonates have been studied in the management of hypercalcemia of malignancy, there are currently two bisphosphonates that have been approved by the US Food and Drug Administration (FDA): pamidronate and zoledronic acid. Additional indications for use of both of these medications are multiple myeloma and oncologic solid tumor to the bone.
+## 12
 
-The antiresorptive mechanisms of pamidronate and zoledronic acid are multifaceted and similar. Both zoledronic acid and pamidronate block osteoclast activity and stimulate osteoclast death. Both compounds inhibit calcium release from bone by inhibiting osteoclast activity driven by tumor-mediated cytokines and enzymes. Pamidronate binds to calcium phosphate in bone to block the demineralization of bone. Pamidronate has been shown to permit bone formation while limiting bone resorption. For patients with moderate hypercalcemia and normal renal function, the recommended dose is a single dose of 60 to 90 mg of pamidronate given intravenously over 2 to 24 hours. In patients with severe hypercalcemia, treatment with a single dose of 90 mg given intravenously over 2 to 24 hours is recommended. Lengthening the duration of infusion decreases the risk for renal insufficiency.
+## Describe the treatment for aspiration.
 
-Seventy percent of patients achieved normocalcemia by the seventh day after the administration of pamidronate. Thirty percent to 50% of patients maintained normocalcemia at 14 days after administration of pamidronate. The median time to relapse of hypercalcemia is 18 days after a single dose of pamidronate.
+Immediate suctioning should be instituted through the endotracheal tube, immediately after intubation, before the initiation of positive pressure ventilation. Any patient who is thought to have aspirated should receive a chest radiograph and, at a minimum, several hours of observation. Supportive care remains the mainstay for aspiration pneumonitis. Supplemental oxygen and ventilatory support should be initiated if respiratory failure is a problem. Patients with respiratory failure often demonstrate atelectasis with alveolar collapse and may respond to noninvasive positive pressure ventilation (continuous positive airway pressure or bilevel positive airway pressure). Patients with particulate aspirate may need bronchoscopy to remove the larger obstructing particulate matter. Antibiotics should not generally be administered unless there is a high likelihood that gram-negative or anaerobic organisms (i.e., bowel obstruction) have been aspirated. However, a worsening clinical course over the following days suggests pneumonia and that a broad-spectrum antibiotic may be indicated. Routine bronchial alveolar lavage of the trachea after aspiration has not been shown to be helpful and may worsen the patient's condition. More aggressive treatments for severe aspiration usually occur in the critical care setting (e.g., prone positioning, lung protection ventilation strategies, bronchoscopy).
 
-Zoledronic acid received approval for treatment of hypercalcemia of malignancy in 2001. The recommended dose is 4 mg administered as a single dose intravenously over no less than 15 minutes. Like pamidronate, the vast majority of zoledronic acid is not metabolized but excreted renally and intact. Dose adjustment is not indicated for patients with hypercalcemia of malignancy with mild to moderate renal impairment. Individualized consideration of risk versus benefit should be given to patients with hypercalcemia of malignancy and severe renal impairment, and reduced dose recommendations based on creatinine clearance are available. Eighty-eight percent of patients returned to normocalcemia after administration of a single dose of zoledronic acid. If this does not occur, readministration is recommended after electrolyte levels and kidney function have been monitored carefully for at least 7 days. The median time to relapse of hypercalcemia is 30 days after a single dose of 4 mg of zoledronic acid and 40 days with a dose of 8 mg.
+Key Points: Aspiration
 
-In addition to the two agents that are FDA approved in the United States for treatment of hypercalcemia of malignancy, alendronate, etidronate, clodronate, and ibandronate have all been investigated as possible treatments for acute hypercalcemia of malignancy.
+*   1.
 
-Overall, bisphosphonates are well tolerated, and only 15% of the patients treated with pamidronate experienced an adverse event during trials. An acute-phase reaction has been reported within 3 days of administration of zoledronic acid, and the most common associated feature is fever, which occurred in 44% of patients receiving zoledronic acid compared with 33% of patients receiving pamidronate. Less common but well-recognized complications of bisphosphonates are osteonecrosis of the jaw, atypical fractures, and hypocalcemia. Hypocalcemia occurred in 1% of patients receiving zoledronic acid and 2% of patients receiving pamidronate. It is not possible to determine the rate of osteonecrosis of the jaw or to definitively attribute that effect to bisphosphonates, but it is suggested that avoiding dental procedures after administration of bisphosphonates can reduce this risk.
+    There are two types of aspiration: aspiration pneumonitis and aspiration pneumonia. The former is primarily irritative and obstructive in pathology, whereas the latter is primarily infectious.
 
-Many patients with hypercalcemia of malignancy have renal insufficiency. In a comparison of zoledronic acid 4-mg and pamidronate 90-mg infusions, 11% of patients had renal deterioration after treatment with zoledronic acid compared with 9% with pamidronate. The risk of renal toxicity is decreased with administration of zoledronic acid over 15 minutes instead of 5 minutes. Deterioration of renal function has been documented after initial and single doses of pamidronate, and for this reason the single dose should not exceed 90 mg. Focal segmental glomerular sclerosis has been documented after administration of pamidronate. Creatinine level should be assessed before each treatment.
+*   2.
 
-## Denosumab
+    Aspiration pneumonitis is most commonly seen on induction of anesthesia, whereas aspiration pneumonia is more common in patients who are elderly, immunocompromised, have impaired cognition or levels of consciousness, have poor dentition, and have dysphagia.
 
-Denosumab is FDA approved for treatment of osteoporosis and reduction of skeletal-related events in patients with metastatic bone disease. Denosumab is a human monoclonal antibody the inhibits the binding of RANKL with its receptor RANK. It is second-line therapy in patients with bisphosphonate-resistant hypercalcemia of malignancy and has also specifically been used in those with multiple myeloma and renal dysfunction. One study reported denosumab to be more efficacious than IV zoledronic acid in the prevention of hypercalcemia of malignancy in patients with metastatic bone disease. Subcutaneous denosumab 120 mg every 4 weeks, without renal adjustment, was compared with IV zoledronic acid (4 mg given intravenously every 4 weeks, with renal adjustment and less frequent intervals if renal insufficiency was present). Denosumab delayed time to first episode of hypercalcemia-related malignancy (hazard ratio \[HR\] 0.63) and also reduced the risk of development of recurrent hypercalcemia by 52%. Only 31% of those receiving denosumab developed hypercalcemia, compared with 40% of the zoledronic acid group.
+*   3.
 
-Denosumab can be administered as 120 mg subcutaneously every 4 weeks. One study administered 120 mg weekly for 4 weeks and then every 4 weeks after that. Serum calcium was lowered by 64% within 10 days. The side effects are similar to those of bisphosphonates, including hypocalcemia. No renal adjustment is reported to be necessary, given that pharmacokinetics and pharmacodynamics are not affected by renal status. However, the effect has been reported to be more pronounced in those with renal failure, so dose reduction has been advised by some authors (i.e., a dose of 60 mg \[or 0.3 mg/kg\] once, and then readministration in 1 week only if the patient is still hypercalcemic).
+    Aspiration risk is not binary, and a continuum exists between low and high risk.
 
-Denosumab has also been reported to be efficacious in patients with parathyroid carcinoma resistant to cinacalcet and IV bisphosphonates.
+*   4.
 
-## Reduction of Intestinal Absorption of Calcium
+    Risk factors for aspiration include patients presenting for emergent operations, recent or unknown oral intake, bowel obstruction, conditions associated with delayed gastric emptying (diabetes, opioids, intraabdominal infections, severe pain), uncontrolled GERD, obesity, trauma, pregnancy, and patients who cannot protect their airway.
 
-Reducing intestinal calcium absorption is most important in the management of hypercalcemia caused by extrarenal production of 1,25(OH) <sub>2</sub> D, such as in lymphomas, some leukemias, and granulomatous diseases as well as in multiple myeloma. Steroids inhibit conversion of 25(OH)D to 1,25(OH) <sub>2</sub> D by 1α-hydroxylase. This in turn lessens intestinal calcium absorption. Steroids have also been reported to reduce tumor production of locally active cytokines in addition to having direct tumorolytic effects. Historically, high dose steroid regimens have been used; however, recent recommendations are for prednisone at 40 to 60 mg daily for 10 days. If steroids are ineffective, they should not be continued, because they can be associated with other morbidities such as hyperglycemia and immunosuppression.
+*   5.
 
-## Reduction of Parathyroid Hormone
+    Risk factors for aspiration pneumonitis include large gastric volumes (> 25 mL) and acidic gastric contents (pH < 2.5).
 
-Cinacalcet is an allosteric modulator of the calcium sensing receptor and leads to a downregulation of PTH production. It is FDA approved for use in secondary hyperparathyroidism and refractory parathyroid carcinoma. Currently, its use for treatment of hypercalcemia has been limited to parathyroid carcinoma, for which it is very effective at lowering PTH and calcium levels. It has not been studied extensively clinically with other causes of hypercalcemia of malignancy; however, Colloton and colleagues evaluated the ability of cinacalcet to attenuate hypercalcemia due to PTHrP excess. They found that cinacalcet resulted in a dose-dependent reduction of calcium and normalization of phosphorus levels in mice with hypercalcemia due to Leydig and colon tumors. The mechanism was further investigated in parathyroidectomized rats that were hypercalcemic because of PTHrP. Cinacalcet attenuated PTHrP-mediated elevations in serum calcium and also resulted in increased serum calcitonin. The authors concluded that cinacalcet's mechanism in treating hypercalcemia is a result of increased calcitonin release and not direct effects on tumor cells.
+*   6.
 
-## Other Treatments
+    Patients at elevated aspiration risk may require prophylaxis to decrease the severity of aspiration should it occur (nonparticulate antacids, H2 blockers, etc.). Patients with bowel obstruction should receive gastric decompression with a nasogastric tube before induction of anesthesia.
 
-## Gallium Nitrate
+*   7.
 
-Gallium nitrate is approved for cancer-related hypercalcemia that is unresponsive to adequate hydration and bisphosphonates and appears to be helpful in hypercalcemia mediated by PTHrP and tamoxifen.
+    RIS and intubation with cricoid pressure and a fast-acting neuromuscular blocking agent (e.g., succinylcholine) is the gold standard for patients at high risk for aspiration who need to be intubated. Regional anesthesia is also a reasonable option in motivated patients who can tolerate little to no sedation.
 
-The mechanism of action is not fully understood. However, it has been reported to inhibit osteoclast mediated bone resorption, stimulate bone formation, and alter mineral composition of bone. When compared with IV pamidronate, gallium appeared to have similar calcium-lowering effects overall, but gallium appeared to be more effective in epidermoid tumors, with 68% responding to therapy versus 33% with pamidronate. Gallium has also been shown to be effective in tamoxifen-induced hypercalcemia and resulted in normocalcemia while allowing affected patients to remain on tamoxifen. The recommended dose is 100 to 200 mg/m <sup>2</sup> IV over 24 hours for 5 days. It is well tolerated, and there does not appear to be significant nephrotoxicity, but it is not currently FDA approved for use in the United States.
+*   8.
 
-## Calcitonin
+    Treatment for aspiration pneumonitis is supportive, whereas patients with aspiration pneumonia need antibiotics.
 
-Calcitonin is a 32–amino acid hormone produced by the parafollicular C cells of the thyroid. Calcitonin inhibits osteoclasts and also increases calcium excretion in the urine. It can be used in the acute treatment of hypercalcemia and is often used in conjunction with IV bisphosphonates for more rapid correction of hypercalcemia. Unfortunately, tachyphylaxis occurs after about 3 days, so it is not a long-term therapeutic option. It is available as a synthetic salmon calcitonin and natural porcine calcitonin. It is given as 4 to 8 IU subcutaneously or intramuscularly every 6 to 12 hours. The effect should be seen within 4 to 6 hours. Side effects include nausea and hypersensitivity to the salmon or porcine preparations.
 
-Glucocorticoids have been reported to enhance the effect of calcitonin by upregulation of the cell surface calcitonin receptors and creation of new ones on the osteoclast. Steroids in addition to calcitonin have the potential to increase the amount of time calcitonin can be used before tachyphylaxis occurs.
+## Laryngospasm
 
-## Hemodialysis
+## 1
 
-Hemodialysis or continuous renal replacement therapy with low or no calcium in the dialysate bath has been used in severe refractory hypercalcemia. Historically, this therapy was used more often, but now with newer agents, there is not as much of a need for hemodialysis. Current indications include those with oliguric or anuric renal failure and volume overload refractory to fluids and diuretics and those with severe symptoms despite the use of the aforementioned therapies. Severe symptoms despite adequate hydration and IV bisphosphonates can also be an indication. Levels of other electrolytes, specifically phosphorus, need to be monitored closely. The effects can be expected to last hours to days.
+## What is laryngospasm?
 
-## Long-Term Considerations
+Laryngospasm is a sudden, sustained closure of the vocal cords caused by a primitive airway reflex meant to prevent aspiration. In the awake state, closure of the vocal cords in response to potential aspiration can be overcome by higher cortical centers, but in light planes of anesthesia (i.e., stage 2), this reflex can be triggered without an opposing force. Oxygenation and ventilation are not possible because of the closed glottis.
 
-Hypercalcemia often occurs in more advanced stages of malignancy and is a poor prognostic sign. Life expectancy has been reported at weeks to months. It is important to discuss overall prognosis and wishes of the patient before embarking on therapy. However, even in those who have chosen palliative care and are not treating their underlying malignancy, treatment with IV bisphosphonates has been shown to improve symptoms and also prolong survival, even if they do not attain normocalcemia.
+## 2
 
-## References
+## What are the potential causes of laryngospasm?
 
-1\. Jick S, et. al.: Prevalence of hypercalcemia of malignancy among cancer patients in the UK: analysis of the Clinical Practice Research Datalink database. Cancer Epidemiol 2015; 39: pp. 901-907.
-    
-2\. Kiyokawa T, et. al.: Hypercalcemia and osteoclast proliferation in adult T-cell leukemia. Cancer 1987; 59: pp. 1187-1191.
-    
-3\. Sargent JT, Smith OP: Haematological emergencies managing hypercalcaemia in adults and children with haematological disorders. Br J Haematol 2010; 149: pp. 465-477.
-    
-4\. Martin TJ, Moseley JM: Mechanisms in the skeletal complications of breast cancer. Endocr Relat Cancer 2000; 7: pp. 271-284.
-    
-5\. Spiro SG, et. al.: Initial evaluation of the patient with lung cancer: symptoms, signs, laboratory tests, and paraneoplastic syndromes: ACCP evidenced-based clinical practice guidelines (2nd edition). Chest 2007; 132: pp. 149S-160S.
-    
-6\. Heaney R: Vitamin D: role in the calcium and phosphorus economies.Feldman DPike JWAdams JSVitamin D.2011.Academic Press.pp. 607-624.
-    
-7\. Anandarajah AP: Role of RANKL in bone diseases. Trends Endocrinol Metab 2009; 20: pp. 88-94.
-    
-8\. Stewart AF: Clinical practice. Hypercalcemia associated with cancer. N Engl J Med 2005; 352: pp. 373-379.
-    
-9\. Wright JD, et. al.: Quality and outcomes of treatment of hypercalcemia of malignancy. Cancer Invest 2015; 33: pp. 331-339.
-    
-10\. Quinn JM, et. al.: Cellular and hormonal mechanisms associated with malignant bone resorption. Lab Invest 1994; 71: pp. 465-471.
-    
-11\. Chirgwin JM, Guise TA: Molecular mechanisms of tumor-bone interactions in osteolytic metastases. Crit Rev Eukaryot Gene Expr 2000; 10: pp. 159-178.
-    
-12\. Marcocci C, Cetani F: Clinical practice. Primary hyperparathyroidism. N Engl J Med 2011; 365: pp. 2389-2397.
-    
-13\. Gomes Lda S, et. al.: Association of primary hyperparathyroidism and humoral hypercalcemia of malignancy in a patient with clear cell renal carcinoma. Arch Endocrinol Metab 2015; 59: pp. 84-88.
-    
-14\. Richey DS, Welch BJ: Concurrent primary hyperparathyroidism and humoral hypercalcemia of malignancy in a patient with clear cell endometrial cancer. South Med J 2008; 101: pp. 1266-1268.
-    
-15\. Alperstein A, Bhayani R: Parathyroid carcinoma, a rare cause of primary hyperparathyroidism. BMJ Case Rep 2014; 2014:
-    
-16\. Nussbaum SR, Gaz RD, Arnold A: Hypercalcemia and ectopic secretion of parathyroid hormone by an ovarian carcinoma with rearrangement of the gene for parathyroid hormone. N Engl J Med 1990; 323: pp. 1324-1328.
-    
-17\. Schwab JD, et. al.: Pseudohypercalcemia in an elderly patient with multiple myeloma: report of a case and review of literature. Endocr Pract 1995; 1: pp. 390-392.
-    
-18\. John R, et. al.: Pseudohypercalcaemia in two patients with IgM paraproteinaemia. Ann Clin Biochem 1997; 34: pp. 694-696.
-    
-19\. Legha SS, et. al.: Tamoxifen-induced hypercalcemia in breast cancer. Cancer 1981; 47: pp. 2803-2806.
-    
-20\. Valentin-Opran A, et. al.: Estrogens and antiestrogens stimulate release of bone resorbing activity by cultured human breast cancer cells. J Clin Invest 1985; 75: pp. 726-731.
-    
-21\. Arumugam GP, et. al.: Tamoxifen flare hypercalcemia: an additional support for gallium nitrate usage. J Bone Miner Metab 2006; 24: pp. 243-247.
-    
-22\. Mirrakhimov AE: Hypercalcemia of malignancy: an update on pathogenesis and management. N Am J Med Sci 2015; 7: pp. 483-493.
-    
-23\. Wynn D, Everett GD, Boothby RA: Small cell carcinoma of the ovary with hypercalcemia causes severe pancreatitis and altered mental status. Gynecol Oncol 2004; 95: pp. 716-718.
-    
-24\. Lins LE: Reversible renal failure caused by hypercalcemia. A retrospective study. Acta Med Scand 1978; 203: pp. 309-314.
-    
-25\. Inzucchi SE: Understanding hypercalcemia. Its metabolic basis, signs, and symptoms. Postgrad Med 2004; 115: pp. 69-70. 73–76
-    
-26\. Nakajima N, et. al.: Posterior reversible encephalopathy syndrome due to hypercalcemia associated with parathyroid hormone-related peptide: a case report and review of the literature. Intern Med 2013; 52: pp. 2465-2468.
-    
-27\. Camara-Lemarroy CR, et. al.: Posterior reversible encephalopathy syndrome due to malignant hypercalcemia: physiopathological considerations. J Clin Endocrinol Metab 2014; 99: pp. 1112-1116.
-    
-28\. Diercks DB, et. al.: Electrocardiographic manifestations: electrolyte abnormalities. J Emerg Med 2004; 27: pp. 153-160.
-    
-29\. Kiewiet RM, et. al.: Ventricular fibrillation in hypercalcaemic crisis due to primary hyperparathyroidism. Neth J Med 2004; 62: pp. 94-96.
-    
-30\. Meng QH, Wagar EA: Laboratory approaches for the diagnosis and assessment of hypercalcemia. Crit Rev Clin Lab Sci 2015; 52: pp. 107-119.
-    
-31\. Baird GS: Ionized calcium. Clin Chim Acta 2011; 412: pp. 696-701.
-    
-32\. Marx SJ: Letter to the editor: Distinguishing typical primary hyperparathyroidism from familial hypocalciuric hypercalcemia by using an index of urinary calcium. J Clin Endocrinol Metab 2015; 100: pp. L29-L30.
-    
-33\. Eastell R, et. al.: Diagnosis of asymptomatic primary hyperparathyroidism: proceedings of the Fourth International Workshop. J Clin Endocrinol Metab 2014; 99: pp. 3570-3579.
-    
-34\. Clines GA, Guise TA: Hypercalcaemia of malignancy and basic research on mechanisms responsible for osteolytic and osteoblastic metastasis to bone. Endocr Relat Cancer 2005; 12: pp. 549-583.
-    
-35\. Goldner W: Cancer-Related Hypercalcemia. J Oncol Pract 2016; 12: pp. 426-432.
-    
-36\. LeGrand SB, Leskuski D, Zama I: Narrative review: furosemide for hypercalcemia: an unproven yet common practice. Ann Intern Med 2008; 149: pp. 259-263.
-    
-37\. Fleisch H: Bisphosphonates: mechanisms of action. Endocr Rev 1998; 19: pp. 80-100.
-    
-38\. Bringhurst FR: Hormones and disorders of mineral metabolism.Melmed SholmoWilliams Textbook of Endocrinology e.a..2015.Elsevier Health SciencesPhiladelphia:pp. 1253-1384.
-    
-39\. Ross JR, et. al.: A systematic review of the role of bisphosphonates in metastatic disease. Health Technol Assess 2004; 8: pp. 1-176.
-    
-
-43\. Major P, et. al.: Zoledronic acid is superior to pamidronate in the treatment of hypercalcemia of malignancy: a pooled analysis of two randomized, controlled clinical trials. J Clin Oncol 2001; 19: pp. 558-567.
-    
-
-45\. Hu MI, et. al.: Denosumab for treatment of hypercalcemia of malignancy. J Clin Endocrinol Metab 2014; 99: pp. 3144-3152.
-    
-46\. Cicci JD, et. al.: Denosumab for the management of hypercalcemia of malignancy in patients with multiple myeloma and renal dysfunction. Clin Lymphoma Myeloma Leuk 2014; 14: pp. e207-e211.
-    
-47\. Diel IJ, et. al.: The role of denosumab in the prevention of hypercalcaemia of malignancy in cancer patients with metastatic bone disease. Eur J Cancer 2015; 51: pp. 1467-1475.
-    
-48\. Fountas A, et. al.: The emerging role of denosumab in the long-term management of parathyroid carcinoma-related refractory hypercalcemia. Endocr Pract 2015; 21: pp. 468-473.
-    
-49\. Silverberg SJ, et. al.: Cinacalcet hydrochloride reduces the serum calcium concentration in inoperable parathyroid carcinoma. J Clin Endocrinol Metab 2007; 92: pp. 3803-3808.
-    
-50\. Colloton M, et. al.: Cinacalcet attenuates hypercalcemia observed in mice bearing either Rice H-500 Leydig cell or C26-DCT colon tumors. Eur J Pharmacol 2013; 712: pp. 8-15.
-    
-51\. Leyland-Jones B: Treating cancer-related hypercalcemia with gallium nitrate. J Support Oncol 2004; 2: pp. 509-516.
-    
-52\. Cvitkovic F, et. al.: Randomized, double-blind, phase II trial of gallium nitrate compared with pamidronate for acute control of cancer-related hypercalcemia. Cancer J 2006; 12: pp. 47-53.
-    
-53\. Arumugam G, Shanthi P, Sachdanandam P: Effect of gallium nitrate on tamoxifen induced hypercalcemia in rats bearing mammary tumor. Exp Oncol 2006; 28: pp. 141-145.
-    
-54\. Sternlicht H, Glezerman IG: Hypercalcemia of malignancy and new treatment options. Ther Clin Risk Manag 2015; 11: pp. 1779-1788.
-    
-55\. Sekine M, Takami H: Combination of calcitonin and pamidronate for emergency treatment of malignant hypercalcemia. Oncol Rep 1998; 5: pp. 197-199.
-    
-56\. Wada S, et. al.: Regulation of calcitonin receptor by glucocorticoid in human osteoclast-like cells prepared in vitro using receptor activator of nuclear factor–kappaB ligand and macrophage colony-stimulating factor. Endocrinology 2001; 142: pp. 1471-1478.
-    
-57\. Pittaway JF, et. al.: Renal replacement therapy as a treatment for severe refractory hypercalcemia. Minerva Endocrinol 2014; 39: pp. 231-233.
-    
-58\. Legrand SB: Modern management of malignant hypercalcemia. Am J Hosp Palliat Care 2011; 28: pp. 515-517.
-    
-59\. Mallik S, et. al.: Malignancy associated hypercalcaemia-responsiveness to IV bisphosphonates and prognosis in a palliative population. Support Care Cancer 2015;
+Laryngospasm typically occurs during emergence when the patient is in a light plane of anesthesia (i.e., stage 2). Stimulation of the vocal cords by excess secretions, foreign matter, or the endotracheal tube during extubation can trigger this primitive reflex. Patients who smoke, have copious secretions, had a recent upper respiratory tract infection (URI) (i.e., < 4–6 weeks), or undergoing upper airway operations (e.g., tonsillectomy) are at higher risk.
+
+## 3
+
+## What should you do when a patient is in laryngospasm?
+
+During a laryngospasm episode, the priority is reopening the closed glottis so that the patient can be ventilated and oxygenated. Continuous positive pressure with a facemask along with jaw thrust and chin lift should be applied. This maneuver is often sufficient to break the laryngospasm. If this is not successful, anesthetic should be deepened and a small bolus of succinylcholine (10–20 mg intravenous \[IV\]) should be administered. Of note, if laryngospasm occurs during induction of anesthesia before establishment of IV access (more common with pediatric patients), an intramuscular injection of succinylcholine (4–5 mg/kg) should be given. After resolution of laryngospasm, ventilation should be continued with 100% oxygen. The decision to reintubate should be made on a case by case basis and should be considered if oxygenation is borderline, aspiration or pulmonary edema is suspected, or if prolonged ventilatory support is expected.
+
+## 4
+
+## What are the potential complications associated with laryngospasm?
+
+Hypoxia and hypercapnia result from lack of oxygenation and ventilation during laryngospasm but should resolve once the airway is reestablished. Prolonged hypoxia after laryngospasm may be caused by aspiration or negative pressure pulmonary edema.
+
+## 5
+
+## What is negative pressure pulmonary edema?
+
+Negative pressure pulmonary edema is a transudative edema produced by the negative intrathoracic pressure, generated by patient inspiratory effort against a closed glottis (i.e., laryngospasm) or other forms of obstruction (i.e., patient biting down on the endotracheal tube causing it to kink).
+
+## 6
+
+## Describe the mechanism of negative pressure pulmonary edema? What will be found on the chest x-ray and the arterial blood gas?
+
+The pressure gradient between the pulmonary capillaries (positive pressure) and the alveoli (“negative” pressure) increases causing fluid to move down the pressure gradient, from the capillaries into the alveoli. The large negative intrathoracic pressure also enhances venous return to the right heart and pulmonary circulation, increasing the pulmonary capillary pressure and worsening the pulmonary edema. Although invasive monitoring is typically not used for diagnosis, patients will have a normal central venous pressure and pulmonary capillary wedge pressure, as the cause is not cardiogenic. A chest x-ray will show bilateral fluffy pulmonary infiltrates similar to noncardiogenic (i.e., ARDS) and cardiogenic pulmonary edema. Patients may have pink frothy airway secretions and the arterial blood gas would show a decreased arterial partial oxygen pressure.
+
+## 7
+
+## The patient is biting on the endotracheal tube on emergence from anesthesia and you are concerned the patient may develop negative pressure pulmonary edema. What can you do?
+
+The best way to prevent this problem is to always have a bite block in place before emergence; however, sometimes the bite block may get dislodged by the patient. If this were to occur, and the patient is biting on the endotracheal tube, the most common recommended treatment options include deepening the anesthetic and/or administering a short-acting neuromuscular blocking agent. One method that the editor (Ryan Laterza) finds helpful is to immediately deflate the cuff of the endotracheal tube, as this will allow the patient to breathe around the endotracheal tube, alleviating the obstruction. A small bolus of an IV amnestic agent (e.g., propofol) can then be given, the endotracheal cuff reinflated, and the bite block replaced.
+
+## 8
+
+## What is the recommended treatment for negative pressure pulmonary edema?
+
+Treatment for negative pressure pulmonary edema is supportive. Supplemental oxygen should be provided, as well as positive pressure ventilation if needed. Although furosemide may be considered, it is often not necessary as the etiology is not cardiogenic. The condition often resolves within 24 to 48 hours.
+
+Key Points: Laryngospasm
+
+*   1.
+
+    Laryngospasm is an emergent situation caused by a primitive reflex, leading to glottic closure and the inability to ventilate. Patients at risk include those with preexisting reactive airways (i.e., asthma, smoking, and recent URIs) and upper airway operations or procedures associated with increased secretions (e.g., laryngoscopy, tonsillectomy, bronchoscopy).
+
+*   2.
+
+    Treatment of laryngospasm is aimed at reestablishing ventilation and includes an escalating algorithm of positive pressure, jaw thrust, deepening of the anesthetic, and succinylcholine.
+
+*   3.
+
+    Negative pressure pulmonary edema is a transudative edema that can result from negative intrathoracic pressure during laryngospasm. The condition is generally self-limited and treatment is supportive.
+
+
+## Bronchospasm
+
+## 1
+
+## What is bronchospasm and how is it recognized in the operating room?
+
+Bronchospasm is the reversible reflex spasm of the smooth muscle lining the pulmonary bronchioles, causing increased lower airway resistance. It can be recognized under anesthesia as the inability to ventilate a patient with a properly placed endotracheal tube, in the setting of a rapidly increasing peak inspiratory pressures. Physical examination may yield diffuse wheezing. This is typically more common in patients with asthma and usually occurs during airway instrumentation (intubation and extubation) but may occur at any point throughout the anesthetic. Bronchospasm may also be the initial presentation of an anaphylactic or anaphylactoid reaction. Capnography will reveal a typical “shark fin” appearance with loss of the expiratory plateau ( [Fig. 31.1](https://www-clinicalkey-com.autorpa.kfsyscc.org/f0010) ). Bronchospasm is an intraoperative emergency and prompt recognition and treatment is critical.
+
+Fig. 31.1
+
+Changes in capnography that can be seen in bronchospasm include a “shark fin” appearance with a loss of the expiratory plateau. This pattern may also be seen in asthma and chronic obstructive pulmonary disease. In severe bronchospasm, the capnography waveform may decrease or even disappear if alveolar ventilation proves impossible. *EtCO* <sub><i>2 </i></sub> , End tidal carbon dioxide.
+
+## 2
+
+## How is bronchospasm treated?
+
+Patients with risk factors (i.e., asthma, chronic obstructive pulmonary disease, recent URI < 4–6 weeks) should be treated preoperatively with an inhaled β <sub>2</sub> agonist (i.e., albuterol) before the induction of anesthesia. If bronchospasm occurs intraoperatively, the following sequence of events should take place. The fraction of inspired oxygen should be increased to 100% and the volatile anesthetic should be increased because of their bronchodilator properties and ideally switched to sevoflurane. Next, an attempt to manually ventilate the patient should be undertaken to evaluate pulmonary compliance. Medication treatment includes inhaled β2 agonists via the breathing circuit and consideration for IV magnesium. In severe bronchospasm, small doses (e.g., 10–20 mcg IV) of IV epinephrine should be administered, as inhaled medications may not be effectively delivered to the distal airways. Systemic corticosteroids can be given to decrease airway inflammation and prevent the recurrence of bronchospasm. Consideration should also include changing the ventilator settings to prolong the expiratory time (inspiratory:expiratory ratio set to 1:3 or 1:4) to prevent autopositive end expiratory pressure.
+
+Key Points: Bronchospasm
+
+*   1.
+
+    Bronchospasm is the reversible constriction of bronchiolar smooth muscle, which increases airway resistance and impairs alveolar ventilation.
+
+*   2.
+
+    Patients with asthma are at a higher risk for bronchospasm, especially during laryngoscopy and intubation.
+
+*   3.
+
+    Treatment of bronchospasm includes administering bronchodilator medications, such as inhaled albuterol and, in severe cases, small doses of IV epinephrine.
+
+
+## Extubation
+
+## 1
+
+## What are the criteria for extubating a patient in the operating room?
+
+Extubation of the trachea is a complex process that requires careful thought and consideration before action. Important factors to consider before extubation include the following: (1) Will the patient’s airway be difficult to manage with mask ventilation? (2) Was laryngoscopy and intubation difficult? (3) Has the status of the airway changed either secondary to surgery, fluid shifts, or trauma (e.g., multiple laryngoscopy attempts)? Once the decision has been made to proceed with extubation, one must ensure that the patient has met extubation criteria. Extubation criteria include adequate oxygenation, adequate ventilation, hemodynamic stability, full reversal of neuromuscular blockade, appropriate acid-base status and normothermia.
+
+In other words, the criteria for extubation is essentially the converse for the criteria to intubate. A patient should not be extubated if they are still meeting criteria for intubation: (1) cannot protect their airway, (2) hypercarbic respiratory failure, (3) hypoxemic respiratory failure.
+
+## 2
+
+## What pharmacological interventions should be considered in a patient who is not meeting extubation criteria or requires immediate reintubation after extubation?
+
+Medications given to patients during anesthesia can be a factor in the inability to extubate at the end of surgery. These medications include neuromuscular blocking agents, opioids, and benzodiazepines.
+
+Residual neuromuscular blockade is one of the most common pharmacological causes of failed extubation. This is because residual neuromuscular blockade may impair a patient’s ability to protect their airway, cause hypercarbic respiratory failure, and in severe cases hypoxemic respiratory failure. Reversal of neuromuscular blockade is achieved with neostigmine, which is a competitive antagonist of nondepolarizing neuromuscular blocking agents. In addition, patients may have an adequate minute ventilation, while intubated, but residual blockade may cause relaxation of pharyngeal muscles after the patient is extubated, leading to upper airway obstruction. Residual neuromuscular blockade presents as rapid shallow breathing, weak hand grip/head lift, and worsening hypercarbia after extubation. Additional reversal with neostigmine or with sugammadex should be considered and some patients will need to be reintubated.
+
+Opioids decrease minute ventilation by causing a small increase in tidal volume but bigger decrease in respiratory rate. A patient that has received excessive opioid will have pinpoint pupils (miosis) and may not initiate breaths on their own. Naloxone is a competitive mu-opioid receptor antagonist used for the reversal of opioid overdose. It can be titrated in small doses (40–80 mcg IV), until the patient begins spontaneous ventilation, while keeping in mind that it will reverse the analgesia as well. Because the half-life of naloxone is shorter than that of most opioids, patients should be carefully monitored in postanesthesia care unit for several hours and the initiation of a naloxone infusion should strongly be considered. Finally, flumazenil can be given to reverse the effects of benzodiazepines with its main side effect being seizures.
+
+## 3
+
+## What other factors contribute to failed extubation, following emergence of anesthesia?
+
+Aside from the pharmacological reasons explained earlier there are other considerations for the inability to extubate. During surgery, the status of the airway may change secondary to bleeding, edema, or trauma. Edema most commonly occurs in patients with prolonged prone or Trendelenburg positioning. Airway trauma can be caused by multiple laryngoscopy attempts in difficult airways or because of the surgery itself. Specific surgical operations that can affect the airway include the following: thyroid surgery, laryngoscopy, carotid endarterectomy, and anterior cervical spine surgery.
+
+## 4
+
+## What is the cuff-leak test?
+
+Surgical operations near the airway, operations associated with large volume shifts, and iatrogenic airway trauma from multiple laryngoscopy attempts may cause significant airway edema. This can present as upper airway obstruction and hypercarbic respiratory failure, following extubation, but can be avoided with a cuff-leak test. The cuff-leak test involves deflating the cuff on the endotracheal tube before extubation and assessing for leaks. The qualitative method includes listening for a leak around the endotracheal tube with positive pressure ventilation. The quantitative method requires volume-controlled ventilation, where the difference between the measured inspiratory and expiratory volume by the ventilator should be greater than 20% to 30%. Patients who do not have an adequate cuff-leak should not be extubated and transferred to the intensive care unit. Treatment for a negative cuff-leak includes placing the head of bed more than 30 degrees and scheduled steroids (i.e., dexamethasone), until the airway edema resolves.
+
+Key Points: Extubation
+
+*   1.
+
+    Before extubation, the anesthesiologist should take into consideration the difficulty in managing the patient’s airway, following induction of anesthesia, and other factors that could alter the patient’s airway, increasing the odds of a failed extubation and difficult reintubation. This includes airway trauma from multiple laryngoscopy attempts and airway edema from large fluid shifts.
+
+*   2.
+
+    Neuromuscular blocking agents and opioids are frequently implicated in patients not meeting extubation criteria or needing to be reintubated. Neuromuscular blocking agents should always be reversed before extubation and opioid overdose can be reversed with naloxone.
+
+*   3.
+
+    Patients with significant airway edema (large volume shifts, airway trauma, surgical operations near the airway) should be assessed with a cuff-leak before extubation.
+
+
+## Suggested Readings
+
+*   Alalami A.A., Ayoub C.M., Baraka A.S.: Laryngospasm: review of different prevention and treatment modalities. Paediatr Anaesth. 2008; 18: pp. 281-288.
+
+*   Apfelbaum J.L., Caplan R.A., Connis R.T., et. al.: Practice guidelines for preoperative fasting and the use of pharmacologic agents to reduce the risk of pulmonary aspiration. Anesthesiology. 2011; 114: pp. 495-511.
+
+*   Cohen N.H.: Is there an optimal treatment for aspiration?.Fleisher L.A.Evidence-Based Practice of Anesthesiology.2009.SaundersPhiladelphia:pp. 327-335.
+
+*   Eikermann M., Blonbner M., Groeben H., et. al.: Postoperative upper airway obstruction after recovery of the train of four ratio of the adductor pollicis muscle from neuromuscular blockade. Anesth Analg. 2006; 102: pp. 937-942.
+
+*   Ikari T., Sasaki C.T.: Laryngospasm: a neurophysiological definition. Ann Otol Rhinol Laryngol. 1980; 89: pp. 220-224.
+
+*   Johnson R.G., Arozullah A.M., Neumayer L., et. al.: Multivariable predictors of postoperative respiratory failure after general and vascular surgery: results from the patient safety in surgery study. J Am Coll Surg. 2007; 204: pp. 1188-1198.
+
+*   Kluger M., Visvanathan T., Myburgh J., et. al.: Crisis management during anesthesia: regurgitation, vomiting and aspiration. Qual Saf Health Care. 2005; 14: pp. 4-9.
+
+*   Landsman I.S.: Mechanisms and treatment of laryngospasm. Int Anesthesiol Clin. 1997; 35: pp. 67-73.
+
+*   Neelakanta G., Chikyarapra A.: A review of patients with pulmonary aspiration of gastric contents during anesthesia reported to the Departmental Quality Assurance Committee. J Clin Anesth. 2006; 18: pp. 102-107.
+
+*   Olsson G.L.: Bronchospasm during anaesthesia. A computer-aided incidence study of 136,929 patients. Acta Anaesthesiol Scand. 1987; 31: pp. 244-252.
+
+*   Olsson G.L., Hallen B.: Laryngospasm during anaesthesia. A computer-aided incidence study in 136,929 patients. Acta Anaesthesiol Scand. 1984; 28: pp. 567-575.
+
+*   Tasch M.: What reduces the risk of aspiration?.Fleisher L.A.Evidence-Based Practice of Anesthesiology.2004.SaundersPhiladelphia:pp. 118-124.
+
+*   Westhorpe R.N., Ludbrook G.L., Helps S.C.: Crisis management during anaesthesia: bronchospasm. BMJ Qual Saf. 2005; 14: pp. e7.
+
+*   White P.F., Tufanogullari B., Sacan O., et. al.: The effect of residual neuromuscular blockade on the speed of reversal with sugammadex. Anesth Analg. 2009; 108: pp. 846-851.
 [[inbox]]
