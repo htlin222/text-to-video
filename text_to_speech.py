@@ -5,6 +5,7 @@ from pathlib import Path
 import azure.cognitiveservices.speech as speechsdk
 from azure.cognitiveservices.speech import AudioDataStream, SpeechSynthesizer
 from azure.cognitiveservices.speech.audio import AudioOutputConfig
+from dictionary.py import replace_term
 
 # def text_to_speech(input_file):
 # export SPEECH_KEY and SPEECH_REGION in your zshrc or zprofile
@@ -22,6 +23,7 @@ def text_to_speech(input_file,output_folder):
     i = 1
     audio_list = []
     for text in lines:
+        text = replace_term(text)
         ssml = SSML_START + SSML_SETTINGS + text + SSML_END
         result = synthesizer.speak_ssml_async(ssml).get()
         stream = AudioDataStream(result)

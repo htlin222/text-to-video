@@ -1,4 +1,4 @@
-# Hypercalcemia ClinicalKey 臨床醫學資料庫
+# Hypercalcemia ClinicalKey 
 ## Summary of Key Points
 
 ## Incidence
@@ -27,9 +27,7 @@ Hypercalcemia is a common complication in patients with malignancy, often seen i
 
 The body's supply of calcium is divided into three separate and distinct compartments, with the skeleton having the largest calcium reserve ( [Fig. 35.1] ). The other two compartments are the intracellular fluid (ICF) and extracellular fluid (ECF). The movement of calcium between compartments is regulated by physical constraints (i.e., cell membranes and calcium-binding proteins) and by hormonal regulation (parathyroid hormone \[PTH\] and vitamin D). The main concern in this chapter is a high level of calcium in the ECF and how to prevent and/or treat it in the setting of malignancy. Under normal physiologic conditions, the extracellular calcium level is highly regulated to maintain the calcium levels within a very narrow range despite constant input and outflow from other organs.
 
-## Figure 35-1
-
-Normal calcium homeostasis. Ca,Calcium; ECF,extracellular fluid. ![image_22-10-26_03_13_17](https://i.imgur.com/VNbeWv2.jpg)
+Normal calcium homeostasis. Ca,Calcium; ECF,extracellular fluid. ![Figure 35-1](https://i.imgur.com/VNbeWv2.jpg)
 
 The organs that control the ECF calcium levels are the gastrointestinal (GI) tract, kidney, and bone. Calcium intake and the resulting absorption through the GI tract is one source for increased ECF calcium (prevalent in malignancies that produce 1,25\[OH\] 2 D, which increases the absorption of calcium). Failure by the kidney to excrete calcium in large enough amounts is one of the primary mechanisms of hypercalcemia in malignancies that produce parathyroid hormone–related peptide (PTHrP), and osteoclastic resorption of bone tissue with the release of calcium into the ECF can be a direct or indirect effect of some cancers.
 
@@ -95,9 +93,7 @@ Nevertheless, from the conceptual perspective, hypercalcemia can be divided into
 
 Additional laboratory measurement of both 25(OH)D and 1,25(OH) 2 D levels to screen for vitamin D–mediated hypercalcemia is indicated. In patients with low levels of PTH, PTHrP, and 1,25(OH) 2 D, one might consider hypercalcemia due to osteolytic metastases as the cause of malignancy-related hypercalcemia. However, it is important to note that more than one mechanism of malignancy-associated hypercalcemia can be seen in a particular patient. The pattern of PTH, PTHrP, and 1,25(OH) 2 D values can often be helpful when determining the cause of hypercalcemia as shown in [Table 35.1] .
 
-## Table 35-1
-
-Laboratory Patterns for Hypercalcemia by Etiology  ![image_22-10-26_03_13_17](https://i.imgur.com/VNbeWv2.jpg)
+Laboratory Patterns for Hypercalcemia by Etiology ![Table 35-1](https://i.imgur.com/VNbeWv2.jpg)
 PTH,Parathyroid hormone; PTHrP,parathyroid hormone–related peptide.
 
 Other investigations should include a complete blood cell count, measurement of blood urea nitrogen, and measurement of creatinine with estimated glomerular filtration rate to assess renal status. Also, kidney function can affect the serum PTH level. Renal insufficiency stimulates PTH production because it inhibits renal 1α-hydroxylase. Measures of osteoblastic function, such as alkaline phosphatase and osteocalcin, have little to offer in the diagnosis or management of hypercalcemia. Rare causes of hypercalcemia can include vitamin A toxicity; levels may be checked if the patient is suspected to have taken a large dose of supplements. If multiple myeloma is suspected based on evaluation, serum and urine protein electrophoresis or immunofixation along with a skeletal survey is indicated. If the cause is clear based on the findings of the aforementioned workup, then a 24-hour urine analysis for calcium and creatinine is not routinely performed. Uncommonly, 24-hour urine calcium clearance–to–creatinine clearance ratio (FeCa) can be valuable to differentiate between primary hyperparathyroidism and familial hypocalciuric hypercalcemia if the course has been indolent, there is a family history of hypercalcemia, and the patient does not have an active cancer that can account for the hypercalcemia. If the FeCa is low (below 0.01), then familial hypocalciuric hypercalcemia should be suspected, and definitive evaluation can include genetic testing for mutations in the CASR, AP2S1,or GNA11genes.
@@ -106,9 +102,7 @@ Radiographs and isotope bone scans might be pertinent for prognosis and follow-u
 
 See the flowchart in [Fig. 35.2] for an overview of diagnosing hypercalcemia of malignancy.
 
-## Figure 35-2
-
-Algorithm for evaluation of hypercalcemia of malignancy. PTH,Parathyroid hormone; PTHrP,parathyroid hormone–related peptide. ![image_22-10-26_03_13_17](https://i.imgur.com/VNbeWv2.jpg)
+Algorithm for evaluation of hypercalcemia of malignancy. PTH,Parathyroid hormone; PTHrP,parathyroid hormone–related peptide. ![Figure 35-2](https://i.imgur.com/VNbeWv2.jpg)
 
 ## Treatment
 
