@@ -108,7 +108,7 @@ def clean_clinicalkey(input_text):
     '''
     according to clincalkey markdown
     '''
-    print("Start cleanup ⬆️  ClinicalKey style")
+    print("\nStart cleanup ⬆️  ClinicalKey style")
     result = input_text
     ### Regex Start
     result = re.sub(r'(\n\n\*\s*)(•|[0-9]\))\n.*\n\s*([A-Za-z])','. \g<2> \g<3>',result)
