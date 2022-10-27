@@ -29,7 +29,7 @@ def project_init(source, output_folder):
     as follows:
     '''
     # set the folder and file name
-    print('\nStart to create the project 🌱 🪴 🌴 ')
+    print('\nStart to create the project 🌱🪴 🌴 ')
     create_output_folder(output_folder)
     cleaned_source = output_folder + "/cleaned_" + source
     splitted_source = output_folder + "/splitted_" + source
@@ -50,8 +50,11 @@ def project_init(source, output_folder):
     print('\n✨Done\n')
     # ===== export video or not =====
     answer = input("Do you want to export video? (y/n): ")
-    if answer == 'y':
+    if answer in ('y','yes','ok','OK'):
         export_final(output_folder)
+    else:
+        print("\nAll right 🤔, will open the folder 📁. ")
+        subprocess.run(f"open {output_folder}", shell=True, check=True)
 
 def export_final(output_folder):
     '''

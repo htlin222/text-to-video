@@ -14,9 +14,9 @@ def img_and_audio(input_image,input_audio,output_video):
     '''
     audio = sf.SoundFile(input_audio)
     duration = audio.frames / audio.samplerate
-    print(duration)
     settings = "-c:v libx264 -tune stillimage -c:a aac -b:a 96k -r 30 -pix_fmt yuv420p -t " + str(duration)
     subprocess.run(f"ffmpeg -y -loop 1 -i {input_image} -i {input_audio} {settings} {output_video}", shell=True)
+    print("❇️ ❇️ ❇️ ❇️ ❇️ \n\n📺 Have combined", input_image, "and", output_video, "together\n\n❇️ ❇️ ❇️ ❇️ ❇️ ")
 
 def batch_img_and_audio(folder):
     '''

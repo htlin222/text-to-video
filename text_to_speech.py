@@ -30,7 +30,7 @@ def text_to_speech(input_file,output_folder):
         filename = output_folder + "/" + str(i) + '_voice' + '.wav'
         filename = re.sub('\n.wav','.wav',filename)
         stream.save_to_wav_file(filename)
-        print("saved 💾", filename)
+        print("\nsaved 💾 :", filename)
         audio_list.append(filename)
         i = i + 1
     audio_list_file = output_folder + '/' + "audio_list.txt"
