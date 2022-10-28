@@ -29,7 +29,7 @@
 		```
 * 安裝以下python套件：
 	```shell
-	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc playsound
+	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc playsound poppler soundfile
 	```
 * 安裝[FFmpeg](https://ffmpeg.org/)
 	```shell
@@ -38,6 +38,10 @@
 * 安裝[Pandoc - Installing pandoc](https://pandoc.org/installing.html)
 	```shell
 	brew install pandoc
+	```
+* 安裝Libreoffice ()
+	```shell
+	brew install --cask libreoffice
 	```
 * 也可以直接執行`install_package.py`會有互動式引導安裝
 
@@ -82,6 +86,6 @@
 
 * 執行:
 	```
-	python main.py 專案名.md fix
+	python main.py 專案名.md export
 	```
 * 就會得到新生成的影片
