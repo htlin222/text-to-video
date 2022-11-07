@@ -21,15 +21,10 @@
 ## 安裝基本套件
 
 * 申請azure語音api
-* 將`SPEECH_KEY`及 `SPEECH_REGION` 加入環境變數中
-	* 或在`.zshrc`或`.bashrc`中加入兩行
-		```
-		export SPEECH_KEY='YOURSPEECH_KEY'
-		export SPEECH_REGION='southeastasia'
-		```
+* 編輯目錄下的`settings.yaml`，將申請好的api key取代 subscription
 * 安裝以下python套件：
 	```shell
-	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc playsound poppler soundfile
+	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc playsound poppler soundfile PyYAML
 	```
 * 安裝[FFmpeg](https://ffmpeg.org/)
 	```shell
