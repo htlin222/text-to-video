@@ -3,5 +3,6 @@
 demo.md
 .DS_Store
 ~$.pptx
+.python-version
 
 __pycache__/

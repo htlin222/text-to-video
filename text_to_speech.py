@@ -6,10 +6,16 @@ import azure.cognitiveservices.speech as speechsdk
 from azure.cognitiveservices.speech import AudioDataStream, SpeechSynthesizer
 from azure.cognitiveservices.speech.audio import AudioOutputConfig
 from dictionary import replace_term
+from yaml import load, SafeLoader
 
 # def text_to_speech(input_file):
+with open("settings.yaml","r",encoding="UTF-8") as stream:
+    settings = load(stream,SafeLoader)
+my_subscription = settings['subscription']
+my_region = settings['region']
+
 # export SPEECH_KEY and SPEECH_REGION in your zshrc or zprofile
-speech_config = speechsdk.SpeechConfig(subscription=os.environ.get('SPEECH_KEY'), region=os.environ.get('SPEECH_REGION'))
+speech_config = speechsdk.SpeechConfig(subscription=my_subscription, region=my_region)
 synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=None)
 
 SSML_SETTINGS = '<voice name="zh-TW-YunJheNeural"><prosody rate="15%" pitch="+5%">'
