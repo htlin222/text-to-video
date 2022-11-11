@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 import sys
 import subprocess
+from yaml import load, SafeLoader
 
 # import pypandoc
 # this method not support image link from imgur
@@ -13,10 +14,13 @@ import subprocess
 #                                 outputfile=output_file_path,
 #                                 extra_args=['--reference-doc=slidetemp.pptx','--resource-path=/Users/mac/text-to-video']
 #                                 )
+with open("settings.yaml","r",encoding="UTF-8") as stream:
+    settings = load(stream,SafeLoader)
+template = settings['slidetemplate']
 
 def convert_to_pptx(filename,folder):
     # pandoc 來源檔.md -o 投影片名.pptx --reference-doc 範本檔.pptx
-    subprocess.run(f"pandoc {filename} -o {folder}/slide.pptx --reference-doc slidetemp.pptx", shell=True)
+    subprocess.run(f"pandoc {filename} -o {folder}/slide.pptx --reference-doc {template}", shell=True)
 
 def create_output_folder(output_folder):
     current_directory = os.getcwd()
