@@ -21,7 +21,12 @@
 ## 安裝基本套件
 
 * 申請azure語音api
-* 編輯目錄下的`settings.yaml`，將申請好的api key取代 subscription
+* 在目錄下新增一個文件`settings.yaml`，在其中加入下面三行：
+	```
+	subscription: '你的APIKEY'
+	region: 'southeastasia'
+	slidetemplate: 'slidetemp.pptx'
+	```
 * 安裝以下python套件：
 	```shell
 	pip install googletrans==4.0.0-rc1 azure-cognitiveservices-speech pypandoc playsound poppler soundfile PyYAML
