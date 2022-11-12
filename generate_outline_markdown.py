@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #!/usr/bin/env python3
 # install the packages first
 # pip install googletrans==4.0.0-rc1 pyperclip

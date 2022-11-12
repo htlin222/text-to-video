@@ -4,5 +4,5 @@ demo.md
 .DS_Store
 ~$.pptx
 .python-version
-settings.yaml
+settings*.yaml
 __pycache__/
