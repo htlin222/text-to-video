@@ -1,29 +1,44 @@
-import os
-import re
-import sys
+# -*- coding: utf-8 -*-
+import os, re, sys, shutil, subprocess, platform
 from pathlib import Path
 import azure.cognitiveservices.speech as speechsdk
 from azure.cognitiveservices.speech import AudioDataStream, SpeechSynthesizer
 from azure.cognitiveservices.speech.audio import AudioOutputConfig
 from dictionary import replace_term
 from yaml import load, SafeLoader
+import main
 
 # def text_to_speech(input_file):
-with open("settings.yaml","r",encoding="UTF-8") as stream:
-    settings = load(stream,SafeLoader)
-my_subscription = settings['subscription']
-my_region = settings['region']
+def text_to_speech(input_file,output_folder):
+    filepath = "settings.yaml"
+    try:
+        with open(filepath,"r",encoding="UTF-8") as stream:
+            settings = load(stream,SafeLoader)
+        my_subscription = settings['subscription']
+        if my_subscription == "YOURKEY":
+            print("\nAPIKEY not found❗Please Enter Your Azure Subscription Key\n")
+            if platform.system() == 'Darwin':       # macOS
+                subprocess.call(('open', filepath))
+            elif platform.system() == 'Windows':    # Windows
+                os.startfile(filepath)
+            else:                                   # linux variants
+                subprocess.call(('xdg-open', filepath))
+            quit()
+        my_region = settings['region']
 
+    except IOError:
+        main.write_settings()
+        quit()
 # export SPEECH_KEY and SPEECH_REGION in your zshrc or zprofile
-speech_config = speechsdk.SpeechConfig(subscription=my_subscription, region=my_region)
-synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=None)
-
-SSML_SETTINGS = '<voice name="zh-TW-YunJheNeural"><prosody rate="15%" pitch="+5%">'
-SSML_START = '<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">'
-SSML_END = '</prosody></voice></speak>'
 # Test the voice: https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features
 # <voice name="zh-TW-YunJheNeural"><prosody rate="24%" pitch="-10%"> 基本元素 </prosody></voice>
-def text_to_speech(input_file,output_folder):
+    speech_config = speechsdk.SpeechConfig(subscription=my_subscription, region=my_region)
+    synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=None)
+
+    SSML_SETTINGS = '<voice name="zh-TW-YunJheNeural"><prosody rate="15%" pitch="+5%">'
+    SSML_START = '<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">'
+    SSML_END = '</prosody></voice></speak>'
+
     with open(input_file) as f:
         lines = f.readlines()
     i = 1

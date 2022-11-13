@@ -1,9 +1,6 @@
+# -*- coding: utf-8 -*-
 #!/usr/bin/env python3
-import os
-import re
-import sys
-import shutil
-import subprocess
+import os, re, sys, shutil, subprocess, platform
 from pathlib import Path
 import generate_outline_markdown as md
 import cleanup
@@ -23,6 +20,32 @@ def create_output_folder(output_folder):
     if not os.path.exists(final_directory):
         os.makedirs(final_directory)
 
+def create_settings():
+    '''
+    create settings.yaml if not exist
+    '''
+    p = 'settings.yaml'
+    try:
+        with open(p,'r') as f:
+            print("settings.yaml exists")
+    except IOError:
+        write_settings()
+        quit()
+
+def write_settings():
+    filepath = "settings.yaml"
+    with open(filepath,'w+') as f:
+        f.write('subscription: "YOURKEY"\n')
+        f.write('region: "southeastasia"\n')
+        f.write('slidetemplate: "slidetemp.pptx"')
+        if platform.system() == 'Darwin':       # macOS
+            subprocess.call(('open', filepath))
+        elif platform.system() == 'Windows':    # Windows
+            os.startfile(filepath)
+        else:                                   # linux variants
+            subprocess.call(('xdg-open', filepath))
+    print("Created settings.yaml, please edit the apikeys, Byebye")
+
 def project_init(source, output_folder):
     '''
     as follows:
@@ -35,6 +58,7 @@ def project_init(source, output_folder):
 
     # clean first
     cleanup.clean_all(source, cleaned_source)
+    create_settings()
     # then split
     cleanup.split_all_paragraph(cleaned_source, splitted_source , 600)
     outline_path = output_folder + '/outline.md'
