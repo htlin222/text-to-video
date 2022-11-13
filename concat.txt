@@ -1,2 +1,0 @@
-file input.mp4
-file demo_final.mp4
