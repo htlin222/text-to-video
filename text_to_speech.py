@@ -54,7 +54,7 @@ def text_to_speech(input_file,output_folder):
         print("\nsaved 💾 :", filename)
         audio_list.append(filename)
         i = i + 1
-    audio_list_file = output_folder + '/' + "audio_list.txt"
+    audio_list_file = os.path.join(output_folder,"audio_list.txt")
     with open(audio_list_file, 'w+') as fp:
         for item in audio_list:
             fp.write("%s\n" % item)

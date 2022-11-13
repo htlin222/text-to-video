@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/env python3
 import os, re, sys, shutil, subprocess, platform
+sys.path.append("modules")
 from pathlib import Path
 import generate_outline_markdown as md
 import cleanup
@@ -10,6 +11,7 @@ import pandoc_pptx as pptx
 import pptx_to_png as to_png
 import export_video
 import dictionary
+import init_project
 
 def create_output_folder(output_folder):
     '''
@@ -24,20 +26,25 @@ def create_settings():
     '''
     create settings.yaml if not exist
     '''
-    p = 'settings.yaml'
+    path_settings = 'settings.yaml'
     try:
-        with open(p,'r') as f:
+        with open(path_settings,'r', encoding='UTF-8') as f_settings:
             print("settings.yaml exists")
     except IOError:
         write_settings()
-        quit()
+        sys.exit()
 
 def write_settings():
+    '''
+    create the settings.yaml and write default settings
+    '''
     filepath = "settings.yaml"
-    with open(filepath,'w+') as f:
-        f.write('subscription: "YOURKEY"\n')
-        f.write('region: "southeastasia"\n')
-        f.write('slidetemplate: "slidetemp.pptx"')
+    with open(filepath,'w+') as default_settings:
+        default_settings.write('subscription: "YOURKEY"\n')
+        default_settings.write('region: "southeastasia"\n')
+        default_settings.write('slidetemplate: "slidetemp.pptx"')
+        default_settings.write('openclip: "openclip.mp4"')
+        default_settings.write('closeclip: "closeclip.mp4"')
         if platform.system() == 'Darwin':       # macOS
             subprocess.call(('open', filepath))
         elif platform.system() == 'Windows':    # Windows
@@ -52,13 +59,13 @@ def project_init(source, output_folder):
     '''
     # set the folder and file name
     print('\nStart to create the project 🌱🪴 🌴 ')
-    create_output_folder(output_folder)
+    init_project.create_output_folder(output_folder)
     cleaned_source = output_folder + "/cleaned_" + source
     splitted_source = output_folder + "/splitted_" + source
 
     # clean first
     cleanup.clean_all(source, cleaned_source)
-    create_settings()
+    init_project.create_settings()
     # then split
     cleanup.split_all_paragraph(cleaned_source, splitted_source , 600)
     outline_path = output_folder + '/outline.md'

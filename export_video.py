@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # import ffmpeg
+
 import os
 import sys
 from pathlib import Path
@@ -25,7 +26,7 @@ def batch_img_and_audio(folder):
     '''
     i = 1
     # read the audio_list from txt files and import them into a list
-    the_audio_list = folder + "/" + "audio_list.txt"
+    the_audio_list = os.path.join(folder, "audio_list.txt")
     with open(the_audio_list) as the_list:
         lines = the_list.readlines()
     clips_list = []
@@ -34,11 +35,14 @@ def batch_img_and_audio(folder):
         input_audio = item
         # if your export image as .jpg, them change the .png to it
         input_image = folder + "/slide/" + "投影片" + str(i) + ".png"
+        slide_with_number = "投影片" + str(i) + ".png"
+        input_image = os.path.join(folder,"slide",slide_with_number)
         output_video = folder + "/" + "clip" + str(i) + ".mp4"
+        clip_with_number = "clip" + str(i) + ".mp4"
+        output_video = os.path.join(folder,clip_with_number)
         if os.path.exists(input_audio):
             img_and_audio(input_image, input_audio, output_video)
         # create the clip list
-        filename = "file " + folder + "/" + "clip" + str(i) + ".mp4"
         filename = "file " + "clip" + str(i) + ".mp4"
         clips_list.append(filename)
         if os.path.isfile(input_audio):
@@ -47,7 +51,7 @@ def batch_img_and_audio(folder):
             os.remove(input_image)
         i = i + 1
     # write clips_list into concat.txt, which will be used later for combine into one video
-    clips_txt = folder + '/' + 'concat.txt'
+    clips_txt = os.path.join(folder,'concat.txt')
     with open(clips_txt, 'w+') as clips_txt:
         for item in clips_list:
             clips_txt.write("%s\n" % item)
@@ -61,13 +65,15 @@ def export_final(output_folder):
     print("Delete all the temp files")
     # Delete all the unused files
 def delete_clips_audio_slide(output_folder):
-    full_path_of_concat = output_folder + "/" + "concat.txt"
-    full_path_of_audio = output_folder + "/" + "audio_list.txt"
-    slide_path_folder = output_folder + "/slide"
+    full_path_of_concat = os.path.join(output_folder, "concat.txt")
+    full_path_of_audio = os.path.join(output_folder, "audio_list.txt")
+    slide_path_folder = os.path.join(output_folder,"slide")
     with open(full_path_of_concat) as f:
         clips_count = len(f.readlines())
         for i in range(1, clips_count+1):
             clip_path = output_folder +  "/clip"+ str(i) + ".mp4"
+            clip_name =  "/clip" + str(i) + ".mp4"
+            clip_path = os.path.join(output_folder,clip_name)
             if os.path.isfile(clip_path):
                 os.remove(clip_path)
     if os.path.isfile(full_path_of_audio):
