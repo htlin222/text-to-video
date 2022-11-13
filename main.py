@@ -14,7 +14,6 @@ import pptx_to_png as to_png
 import export_video
 import dictionary
 
-
 def create_output_folder(output_folder):
     '''
     check if output folder exists, otherwise create it
